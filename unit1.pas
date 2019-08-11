@@ -6,14 +6,36 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, TAGraph, TASeries, Forms, Controls, Graphics,
-  Dialogs, TADrawUtils, TACustomSeries, BloDat;
+  Dialogs, Menus, TADrawUtils, TACustomSeries, BloDat, FctItem;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
-    Chart1: TChart;
+    Chart: TChart;
+    MainMenu1: TMainMenu;
+    MenuItem1: TMenuItem;
+    MenuItem10: TMenuItem;
+    MenuItem11: TMenuItem;
+    MenuItem12: TMenuItem;
+    MenuItem13: TMenuItem;
+    MenuItem14: TMenuItem;
+    MenuItem15: TMenuItem;
+    MenuItem16: TMenuItem;
+    MenuItem17: TMenuItem;
+    MenuItem18: TMenuItem;
+    MenuItem19: TMenuItem;
+    MenuItem2: TMenuItem;
+    MenuItem20: TMenuItem;
+    Functionitems: TMenuItem;
+    MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
+    MenuItem5: TMenuItem;
+    MenuItem6: TMenuItem;
+    MenuItem7: TMenuItem;
+    MenuItem8: TMenuItem;
+    MenuItem9: TMenuItem;
     PCTSeries: TLineSeries;
     P_LCRSeries: TLineSeries;
     MPVSeries: TLineSeries;
@@ -34,14 +56,12 @@ type
     HGBSeries: TLineSeries;
     RBCSeries: TLineSeries;
     WBCSeries: TLineSeries;
-    SinSeries: TLineSeries;
-    CosSeries: TLineSeries;
-    SinCosSeries: TLineSeries;
     procedure FormCreate(Sender: TObject);
-    procedure HCTSeriesCustomDrawPointer(ASender: TChartSeries;
-      ADrawer: IChartDrawer; AIndex: Integer; ACenter: TPoint);
+    procedure FunctionItemClick(Sender: TObject);
   private
-
+    function InitFunctionsMenu: TMenuItem;
+    function NewFunctionItem(ASeries: TBasicChartSeries): TFunctionMenuItem;
+  protected
   public
 
   end;
@@ -64,21 +84,33 @@ var
   i: Integer;
   x: Double;
 begin
-  {for i := 0 to N - 1 do begin
-    x := Min + (Max - Min) * i / (N - 1);
-    SinSeries.AddXY(x, sin(x));
-    CosSeries.AddXY(x, cos(x));
-    SinCosSeries.AddXY(x, sin(x) * cos(x))
-  end;}
   FillChart;
-  {DateSeparator := '.';
-  ShowMessage(ShortDateFormat)}
+  InitFunctionsMenu
 end;
 
-procedure TForm1.HCTSeriesCustomDrawPointer(ASender: TChartSeries;
-  ADrawer: IChartDrawer; AIndex: Integer; ACenter: TPoint);
+procedure TForm1.FunctionItemClick(Sender: TObject);
 begin
+  with Sender as TFunctionMenuItem do begin
+    Series.Active := not Series.Active;
+    Checked := Series.Active
+  end;
+end;
 
+function TForm1.InitFunctionsMenu: TMenuItem;
+var
+  i: Integer;
+begin
+  for i := 0 to Chart.SeriesCount - 1 do
+    FunctionItems.Add(NewFunctionItem(Chart.Series[i]));
+end;
+
+function TForm1.NewFunctionItem(ASeries: TBasicChartSeries): TFunctionMenuItem;
+begin
+  Result := TFunctionMenuItem.Create(Self);
+  Result.Series := ASeries;
+  Result.Caption := (ASeries as TLineSeries).Title;
+  Result.Checked := ASeries.Active;
+  Result.OnClick := @FunctionItemClick;
 end;
 
 end.

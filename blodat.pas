@@ -8,12 +8,17 @@ uses
   Classes, SysUtils;
 
 procedure FillChart;
+{ This works only with Form1 of the current project but is not a method of
+  TForm1 to have a separate backup of the data contained in this unit file }
+
+function ShortCutToDescription(AShortCut: string): string;
 
 implementation
 
 uses Unit1;
 
 procedure FillChart;
+
   function SetTime(DateTimeStr: string): Integer;
   var
     DT: TDateTime;
@@ -40,8 +45,9 @@ procedure FillChart;
       HGBSeries.AddX(DT);
       RBCSeries.AddX(DT);
       Result := WBCSeries.AddX(DT);
-    end;
+    end
   end;
+
 var
   i: Integer;
 begin
@@ -92,6 +98,11 @@ begin
     PCTSeries.YValue[i] := -0.16;
 
   end;
+end;
+
+function ShortCutToDescription(AShortCut: string): string;
+begin
+  Result := AShortCut
 end;
 
 initialization

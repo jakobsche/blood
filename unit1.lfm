@@ -4,13 +4,14 @@ object Form1: TForm1
   Top = 228
   Width = 590
   Caption = 'Form1'
-  ClientHeight = 391
+  ClientHeight = 365
   ClientWidth = 590
+  Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.1.0.0'
-  object Chart1: TChart
+  object Chart: TChart
     Left = 0
-    Height = 391
+    Height = 365
     Top = 0
     Width = 590
     AxisList = <    
@@ -34,6 +35,7 @@ object Form1: TForm1
       end    
       item
         Alignment = calBottom
+        Marks.LabelFont.Orientation = 900
         Marks.LabelBrush.Style = bsClear
         Minors = <>
         Title.Visible = True
@@ -49,133 +51,204 @@ object Form1: TForm1
     Foot.Brush.Color = clBtnFace
     Foot.Font.Color = clBlue
     Legend.Alignment = laBottomCenter
+    Legend.BackgroundBrush.Color = clBlack
     Legend.ColumnCount = 3
+    Legend.Font.Color = clWhite
     Legend.Visible = True
     Title.Brush.Color = clBtnFace
     Title.Font.Color = clBlue
     Title.Text.Strings = (
-      'Winkelfunktionen'
+      'Blutwerte'
     )
     Title.Visible = True
     Align = alClient
-    object SinSeries: TLineSeries
-      Title = 'y = sin x'
-      AxisIndexX = 1
+    object WBCSeries: TLineSeries
+      Title = 'WBC'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clMaroon
+    end
+    object RBCSeries: TLineSeries
+      Title = 'RBC'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clGreen
+    end
+    object HGBSeries: TLineSeries
+      Title = 'HGB'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clOlive
+    end
+    object HCTSeries: TLineSeries
+      Title = 'HCT'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clNavy
+    end
+    object MCVSeries: TLineSeries
+      Title = 'MCV'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clPurple
+    end
+    object MCHSeries: TLineSeries
+      Title = 'MCH'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clTeal
+    end
+    object MCHCSeries: TLineSeries
+      Title = 'MCHC'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clGray
+    end
+    object PLTSeries: TLineSeries
+      Title = 'PLT'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clSilver
+    end
+    object LYMpctSeries: TLineSeries
+      Title = 'LYM%'
+      AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clRed
     end
-    object CosSeries: TLineSeries
-      Title = 'y = cos x'
-      AxisIndexX = 1
+    object MXDpctSeries: TLineSeries
+      Title = 'MXD%'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clLime
+    end
+    object NEUTpctSeries: TLineSeries
+      Title = 'NEUT%'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clYellow
+    end
+    object LYMSeries: TLineSeries
+      Title = 'LYM#'
+      AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clBlue
     end
-    object SinCosSeries: TLineSeries
-      Title = 'y = sin x cos x'
-      AxisIndexX = 1
-      AxisIndexY = 1
-      LinePen.Color = clLime
-    end
-    object WBCSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object RBCSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object HGBSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object HCTSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-      OnCustomDrawPointer = HCTSeriesCustomDrawPointer
-    end
-    object MCVSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object MCHSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object MCHCSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object PLTSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object LYMpctSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object MXDpctSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object NEUTpctSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
-    object LYMSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
-    end
     object MXDSeries: TLineSeries
+      Title = 'MXD#'
       AxisIndexX = 2
       AxisIndexY = 0
-      LinePen.Color = clWhite
+      LinePen.Color = clFuchsia
     end
     object NEUTSeries: TLineSeries
+      Title = 'NEUT#'
       AxisIndexX = 2
       AxisIndexY = 0
-      LinePen.Color = clWhite
+      LinePen.Color = clAqua
     end
     object RDW_SDSeries: TLineSeries
+      Title = 'RDW-SD'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clWhite
     end
     object RDW_CVSeries: TLineSeries
+      Title = 'RDW-CV'
       AxisIndexX = 2
       AxisIndexY = 0
-      LinePen.Color = clWhite
+      LinePen.Color = clMoneyGreen
     end
     object PDWSeries: TLineSeries
+      Title = 'PDW'
       AxisIndexX = 2
       AxisIndexY = 0
-      LinePen.Color = clWhite
+      LinePen.Color = clSkyBlue
     end
     object MPVSeries: TLineSeries
+      Title = 'MPV'
       AxisIndexX = 2
       AxisIndexY = 0
-      LinePen.Color = clWhite
+      LinePen.Color = clCream
     end
     object P_LCRSeries: TLineSeries
+      Title = 'P-LCR'
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clMedGray
+    end
+    object PCTSeries: TLineSeries
+      Title = 'PCT'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clWhite
     end
-    object PCTSeries: TLineSeries
-      AxisIndexX = 2
-      AxisIndexY = 0
-      LinePen.Color = clWhite
+  end
+  object MainMenu1: TMainMenu
+    left = 207
+    top = 84
+    object MenuItem2: TMenuItem
+      Caption = 'Datei'
+      object MenuItem3: TMenuItem
+        Caption = '&Neu'
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Öffnen ...'
+      end
+      object MenuItem5: TMenuItem
+        Caption = '&Speichern'
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Speichern unter'
+      end
+      object MenuItem7: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem8: TMenuItem
+        Caption = '&Drucken'
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'D&rucker einrichten ...'
+      end
+      object MenuItem10: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'Beenden'
+      end
+    end
+    object MenuItem1: TMenuItem
+      Caption = '&Ansicht'
+      object Functionitems: TMenuItem
+        Caption = 'Funktionen'
+      end
+    end
+    object MenuItem12: TMenuItem
+      Caption = '&Hilfe'
+      object MenuItem13: TMenuItem
+        Caption = 'Hilfeinhalte'
+        ShortCut = 112
+      end
+      object MenuItem14: TMenuItem
+        Caption = 'Hilfe-&Index'
+      end
+      object MenuItem15: TMenuItem
+        Caption = '&Onlinehilfe'
+      end
+      object MenuItem16: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem17: TMenuItem
+        Caption = '&Lizenzinformation'
+      end
+      object MenuItem18: TMenuItem
+        Caption = 'Na&ch Updates suchen'
+      end
+      object MenuItem19: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem20: TMenuItem
+        Caption = 'Über'
+      end
     end
   end
 end

@@ -36,7 +36,7 @@
         <PackageName Value="LCL"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="blood.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -54,6 +54,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="BloDat"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="fctitem.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="FctItem"/>
+      </Unit3>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
