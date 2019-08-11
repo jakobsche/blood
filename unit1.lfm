@@ -1,0 +1,181 @@
+object Form1: TForm1
+  Left = 420
+  Height = 391
+  Top = 228
+  Width = 590
+  Caption = 'Form1'
+  ClientHeight = 391
+  ClientWidth = 590
+  OnCreate = FormCreate
+  LCLVersion = '2.1.0.0'
+  object Chart1: TChart
+    Left = 0
+    Height = 391
+    Top = 0
+    Width = 590
+    AxisList = <    
+      item
+        Grid.Color = clSilver
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.Visible = True
+        Title.Caption = 'y'
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Grid.Color = clSilver
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.Visible = True
+        Title.Caption = 'x'
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.Visible = True
+        Title.Caption = 'Datum, Uhrzeit'
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    BackColor = clBlack
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Legend.Alignment = laBottomCenter
+    Legend.ColumnCount = 3
+    Legend.Visible = True
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'Winkelfunktionen'
+    )
+    Title.Visible = True
+    Align = alClient
+    object SinSeries: TLineSeries
+      Title = 'y = sin x'
+      AxisIndexX = 1
+      AxisIndexY = 0
+      LinePen.Color = clRed
+    end
+    object CosSeries: TLineSeries
+      Title = 'y = cos x'
+      AxisIndexX = 1
+      AxisIndexY = 0
+      LinePen.Color = clBlue
+    end
+    object SinCosSeries: TLineSeries
+      Title = 'y = sin x cos x'
+      AxisIndexX = 1
+      AxisIndexY = 1
+      LinePen.Color = clLime
+    end
+    object WBCSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object RBCSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object HGBSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object HCTSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+      OnCustomDrawPointer = HCTSeriesCustomDrawPointer
+    end
+    object MCVSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object MCHSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object MCHCSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object PLTSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object LYMpctSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object MXDpctSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object NEUTpctSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object LYMSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object MXDSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object NEUTSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object RDW_SDSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object RDW_CVSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object PDWSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object MPVSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object P_LCRSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+    object PCTSeries: TLineSeries
+      AxisIndexX = 2
+      AxisIndexY = 0
+      LinePen.Color = clWhite
+    end
+  end
+end
