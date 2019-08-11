@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, TAGraph, TASeries, Forms, Controls, Graphics,
-  Dialogs, Menus, TADrawUtils, TACustomSeries, BloDat, FctItem;
+  Dialogs, Menus, TADrawUtils, TACustomSeries, BloDat, FctItem, TAChartAxisUtils;
 
 type
 
@@ -56,11 +56,16 @@ type
     HGBSeries: TLineSeries;
     RBCSeries: TLineSeries;
     WBCSeries: TLineSeries;
+    procedure ChartAfterPaint(ASender: TChart);
+    procedure ChartAxisList1MarkToText(var AText: String; AMark: Double);
     procedure FormCreate(Sender: TObject);
     procedure FunctionItemClick(Sender: TObject);
+    procedure MenuItem11Click(Sender: TObject);
   private
-    function InitFunctionsMenu: TMenuItem;
+    function InitFunctionsMenu: TMenuItem; {creates a chart content sensitive
+      submenu}
     function NewFunctionItem(ASeries: TBasicChartSeries): TFunctionMenuItem;
+      {creates a chart series determined submenu item}
   protected
   public
 
@@ -70,6 +75,8 @@ var
   Form1: TForm1;
 
 implementation
+
+uses FormEx;
 
 {$R *.lfm}
 
@@ -84,8 +91,21 @@ var
   i: Integer;
   x: Double;
 begin
-  FillChart;
-  InitFunctionsMenu
+  Caption := Application.Title;
+  FormAdjust(Self); {adapt the form size and position to the screen, should
+    always be used in an app's main form}
+  FillChart; {insert data and draw the series}
+  InitFunctionsMenu; {add chart content sensitive menu items}
+end;
+
+procedure TForm1.ChartAxisList1MarkToText(var AText: String; AMark: Double);
+begin
+  AText := DateTimeToStr(AMark)
+end;
+
+procedure TForm1.ChartAfterPaint(ASender: TChart);
+begin
+
 end;
 
 procedure TForm1.FunctionItemClick(Sender: TObject);
@@ -94,6 +114,11 @@ begin
     Series.Active := not Series.Active;
     Checked := Series.Active
   end;
+end;
+
+procedure TForm1.MenuItem11Click(Sender: TObject);
+begin
+  Close
 end;
 
 function TForm1.InitFunctionsMenu: TMenuItem;
@@ -108,7 +133,7 @@ function TForm1.NewFunctionItem(ASeries: TBasicChartSeries): TFunctionMenuItem;
 begin
   Result := TFunctionMenuItem.Create(Self);
   Result.Series := ASeries;
-  Result.Caption := (ASeries as TLineSeries).Title;
+  Result.Caption := (ASeries as TCustomChartSeries).Title;
   Result.Checked := ASeries.Active;
   Result.OnClick := @FunctionItemClick;
 end;

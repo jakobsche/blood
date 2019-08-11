@@ -7,13 +7,14 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, tachartlazaruspkg, Unit1, BloDat, FctItem
+  Forms, tachartlazaruspkg, Unit1, BloDat, FctItem, lclpatch
   { you can add units after this };
 
 {$R *.res}
 
 begin
   RequireDerivedFormResource:=True;
+  Application.Title:='Blood';
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.Run;

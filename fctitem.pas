@@ -5,7 +5,7 @@ unit FctItem;
 interface
 
 uses
-  Classes, SysUtils, Menus, TAGraph;
+  Menus, TAGraph;
 
 type
   TFunctionMenuItem = class(TMenuItem)

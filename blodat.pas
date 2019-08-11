@@ -5,7 +5,7 @@ unit BloDat;
 interface
 
 uses
-  Classes, SysUtils;
+  SysUtils;
 
 procedure FillChart;
 { This works only with Form1 of the current project but is not a method of
@@ -19,12 +19,14 @@ uses Unit1;
 
 procedure FillChart;
 
-  function SetTime(DateTimeStr: string): Integer;
+  function AddTime(DateTimeStr: string): Integer;
   var
     DT: TDateTime;
   begin
     DT := StrToDateTime(DateTimeStr);
     with Form1 do begin
+      Result := WBCSeries.AddX(DT);
+      RBCSeries.AddX(DT);
       PCTSeries.AddX(DT);
       P_LCRSeries.AddX(DT);
       MPVSeries.AddX(DT);
@@ -43,8 +45,6 @@ procedure FillChart;
       MCVSeries.AddX(DT);
       HCTSeries.AddX(DT);
       HGBSeries.AddX(DT);
-      RBCSeries.AddX(DT);
-      Result := WBCSeries.AddX(DT);
     end
   end;
 
@@ -53,7 +53,7 @@ var
 begin
   with Form1 do begin
 
-    i := SetTime('20.2.2019 9:46');
+    i := AddTime('20.2.2019 9:46');
     WBCSeries.YValue[i] := 4.6;
     RBCSeries.YValue[i] := 4.25;
     HGBSeries.YValue[i] := 13.3;
@@ -75,7 +75,7 @@ begin
     P_LCRSeries.YValue[i] := 20.6;
     PCTSeries.YValue[i] := -0.15;
 
-    i := SetTime('28.3.2019 15:26');
+    i := AddTime('28.3.2019 15:26');
     WBCSeries.YValue[i] := 5.5;
     RBCSeries.YValue[i] := 4.07;
     HGBSeries.YValue[i] := 12.7;
@@ -102,7 +102,27 @@ end;
 
 function ShortCutToDescription(AShortCut: string): string;
 begin
-  Result := AShortCut
+  if AShortCut = 'WBC' then Result := 'Anzahl weißer Blutzellen (white blood cells) in 1E3/'#206#188'l'
+  else if AShortCut = 'RBC' then Result := 'Anzahl roter Blutzellen (red blood cells) in 1E6/'#206#188'l'
+  else if AShortCut = 'HGB' then Result := 'Hämoglobin in g/dl'
+  else if AShortCut = 'HCT' then Result := 'Hämatokrit in Vol-%'
+  else if AShortCut = 'MCV' then Result := 'Mittlere Größer der peripheren Erythrozyten (mean corpuscular volume) in fl '
+  else if AShortCut = 'MCH' then Result := '(melanin concentrating hormone) in pg'
+  else if AShortCut = 'MCHC' then Result := 'Mittlere korpuskuläre Hämoglobinkonzentration (mean corpuscular/cellular hemoglobin concentration) in g/dl'
+  else if AShortCut = 'PLT' then Result := 'Blutplättchen (platelets) in 1E3/'#206#188'l'
+  else if AShortCut = 'LYM%' then Result := 'Lymphozyten in %'
+  else if AShortCut = 'MXD%' then Result := 'Monozyten, basophile und eosinophlie Granulozyten in %'
+  else if AShortCut = 'NEUT%' then Result := 'Neutrophilen Granulozyten in %'
+  else if AShortCut = 'LYM#' then Result := 'Lymphozyten in 1E3/'#206#188'l'
+  else if AShortCut = 'MXD#' then Result := 'Monozyten, basophile und eosinophlie Granulozyten in 1E3/'#206#188'l'
+  else if AShortCut = 'NEUT#' then Result := 'Neutrophilen Granulozyten in 1E3/ul'
+  else if AShortCut = 'RDW-SD' then Result := 'Verteilung der roten Blutzellen (red blood cell distribution width) in fl'
+  else if AShortCut = 'RDW-CV' then Result := 'Verteilung der roten Blutzellen (red blood cell distribution width) in %'
+  else if AShortCut = 'PDW' then Result := 'Thrombozytenverteilungsbreite in fl'
+  else if AShortCut = 'MPV' then Result := 'Mittleres Thrombozytenvolumen in fl'
+  else if AShortCut = 'P-LCR' then Result := '(platelett large cell ratio) in %'
+  else if AShortCut = 'PCT' then Result := 'Procalcitonin in %'
+  else Result := AShortCut
 end;
 
 initialization

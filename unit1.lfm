@@ -1,17 +1,19 @@
 object Form1: TForm1
   Left = 420
-  Height = 391
-  Top = 228
+  Height = 460
+  Top = 159
   Width = 590
   Caption = 'Form1'
-  ClientHeight = 365
+  ClientHeight = 434
   ClientWidth = 590
   Menu = MainMenu1
   OnCreate = FormCreate
+  Position = poDefault
   LCLVersion = '2.1.0.0'
+  WindowState = wsMaximized
   object Chart: TChart
     Left = 0
-    Height = 365
+    Height = 434
     Top = 0
     Width = 590
     AxisList = <    
@@ -25,15 +27,6 @@ object Form1: TForm1
         Title.LabelBrush.Style = bsClear
       end    
       item
-        Grid.Color = clSilver
-        Alignment = calBottom
-        Marks.LabelBrush.Style = bsClear
-        Minors = <>
-        Title.Visible = True
-        Title.Caption = 'x'
-        Title.LabelBrush.Style = bsClear
-      end    
-      item
         Alignment = calBottom
         Marks.LabelFont.Orientation = 900
         Marks.LabelBrush.Style = bsClear
@@ -41,11 +34,7 @@ object Form1: TForm1
         Title.Visible = True
         Title.Caption = 'Datum, Uhrzeit'
         Title.LabelBrush.Style = bsClear
-      end    
-      item
-        Marks.LabelBrush.Style = bsClear
-        Minors = <>
-        Title.LabelBrush.Style = bsClear
+        OnMarkToText = ChartAxisList1MarkToText
       end>
     BackColor = clBlack
     Foot.Brush.Color = clBtnFace
@@ -61,126 +50,147 @@ object Form1: TForm1
       'Blutwerte'
     )
     Title.Visible = True
+    OnAfterPaint = ChartAfterPaint
     Align = alClient
     object WBCSeries: TLineSeries
       Title = 'WBC'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clMaroon
+      LinePen.Width = 4
     end
     object RBCSeries: TLineSeries
       Title = 'RBC'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clGreen
+      LinePen.Width = 4
     end
     object HGBSeries: TLineSeries
       Title = 'HGB'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clOlive
+      LinePen.Width = 4
     end
     object HCTSeries: TLineSeries
       Title = 'HCT'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clNavy
+      LinePen.Width = 4
     end
     object MCVSeries: TLineSeries
       Title = 'MCV'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clPurple
+      LinePen.Width = 4
     end
     object MCHSeries: TLineSeries
       Title = 'MCH'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clTeal
+      LinePen.Width = 4
     end
     object MCHCSeries: TLineSeries
       Title = 'MCHC'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clGray
+      LinePen.Width = 4
     end
     object PLTSeries: TLineSeries
       Title = 'PLT'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clSilver
+      LinePen.Width = 4
     end
     object LYMpctSeries: TLineSeries
       Title = 'LYM%'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clRed
+      LinePen.Width = 4
     end
     object MXDpctSeries: TLineSeries
       Title = 'MXD%'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clLime
+      LinePen.Width = 4
     end
     object NEUTpctSeries: TLineSeries
       Title = 'NEUT%'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clYellow
+      LinePen.Width = 4
     end
     object LYMSeries: TLineSeries
       Title = 'LYM#'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clBlue
+      LinePen.Width = 4
     end
     object MXDSeries: TLineSeries
       Title = 'MXD#'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clFuchsia
+      LinePen.Width = 4
     end
     object NEUTSeries: TLineSeries
       Title = 'NEUT#'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clAqua
+      LinePen.Width = 4
     end
     object RDW_SDSeries: TLineSeries
       Title = 'RDW-SD'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clWhite
+      LinePen.Width = 4
     end
     object RDW_CVSeries: TLineSeries
       Title = 'RDW-CV'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clMoneyGreen
+      LinePen.Width = 4
     end
     object PDWSeries: TLineSeries
       Title = 'PDW'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clSkyBlue
+      LinePen.Width = 4
     end
     object MPVSeries: TLineSeries
       Title = 'MPV'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clCream
+      LinePen.Width = 4
     end
     object P_LCRSeries: TLineSeries
       Title = 'P-LCR'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clMedGray
+      LinePen.Width = 4
     end
     object PCTSeries: TLineSeries
       Title = 'PCT'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clWhite
+      LinePen.Width = 4
     end
   end
   object MainMenu1: TMainMenu
@@ -214,6 +224,7 @@ object Form1: TForm1
       end
       object MenuItem11: TMenuItem
         Caption = 'Beenden'
+        OnClick = MenuItem11Click
       end
     end
     object MenuItem1: TMenuItem
