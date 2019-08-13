@@ -15,9 +15,11 @@ This program is free Open Source software according to the limitations you can f
 1. Download and install Lazarus from lazarus-ide.org! Depending on your operating system you could need further tools to make Lazarus work. Some Linux distributions have packages to install Lazarus easily. This might work, if this Lazarus version is not to old. Otherwise follow the instructions of lazarus-ide.org to get Lazarus work
 2. Clone or download this repository!
 3. Open the file blood.lpi as project in Lazarus!
-4. Click the run button!
+4. Click the run button! It will be compiled and executed, or you get error messages. If there are missing packages, try to find them as my GitHub repository or enywhere else. After a successful compile, it runs immediately. Additionally you get the executable file with the name "blood" and the extension for executable applications of your operating system. This file runs from a location of your choice on your machine or similar sufficiently similar devices.
 
-Developers: Explore the code, if available documentation does not help to get features for your own applications!
+Developers: Explore the code, if available documentation does not help to get features for your own projects!
+
+Artists: You can suggest graphical images, that can be used as icons and illustrations for the project or related packages
 
 ## Toolset
 
