@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, TAGraph, TASeries, Forms, Controls, Graphics,
-  Dialogs, Menus, TADrawUtils, TACustomSeries, BloDat, FctItem, TAChartAxisUtils;
+  Dialogs, Menus, TADrawUtils, TACustomSeries, BloDat, FctItem,
+  TAChartAxisUtils, TATools, Types;
 
 type
 
@@ -14,6 +15,10 @@ type
 
   TForm1 = class(TForm)
     Chart: TChart;
+    ChartToolset: TChartToolset;
+    ChartToolsetDataPointCrosshairTool1: TDataPointCrosshairTool;
+    ChartToolsetDataPointHintTool1: TDataPointHintTool;
+    ChartToolsetZoomDragTool1: TZoomDragTool;
     MainMenu1: TMainMenu;
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
@@ -56,8 +61,9 @@ type
     HGBSeries: TLineSeries;
     RBCSeries: TLineSeries;
     WBCSeries: TLineSeries;
-    procedure ChartAfterPaint(ASender: TChart);
     procedure ChartAxisList1MarkToText(var AText: String; AMark: Double);
+    procedure ChartToolsetDataPointHintTool1Hint(ATool: TDataPointHintTool;
+      const APoint: TPoint; var AHint: String);
     procedure FormCreate(Sender: TObject);
     procedure FunctionItemClick(Sender: TObject);
     procedure MenuItem11Click(Sender: TObject);
@@ -103,9 +109,10 @@ begin
   AText := DateTimeToStr(AMark)
 end;
 
-procedure TForm1.ChartAfterPaint(ASender: TChart);
+procedure TForm1.ChartToolsetDataPointHintTool1Hint(ATool: TDataPointHintTool;
+  const APoint: TPoint; var AHint: String);
 begin
-
+  AHint := Format('%s: %s, %f', [(ATool.Series as TLineSeries).Title, DateTimeToStr(ATool.NearestGraphPoint.X), ATool.NearestGraphPoint.Y])
 end;
 
 procedure TForm1.FunctionItemClick(Sender: TObject);

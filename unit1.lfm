@@ -17,6 +17,8 @@ object Form1: TForm1
     Height = 434
     Top = 0
     Width = 590
+    AllowPanning = False
+    AllowZoom = False
     AxisList = <    
       item
         Grid.Color = clSilver
@@ -52,56 +54,50 @@ object Form1: TForm1
       'Blutwerte'
     )
     Title.Visible = True
-    OnAfterPaint = ChartAfterPaint
+    Toolset = ChartToolset
     Align = alClient
+    ParentShowHint = False
     object WBCSeries: TLineSeries
       Title = 'WBC'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clRed
-      LinePen.Width = 2
     end
     object RBCSeries: TLineSeries
       Title = 'RBC'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clLime
-      LinePen.Width = 2
     end
     object HGBSeries: TLineSeries
       Title = 'HGB'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clYellow
-      LinePen.Width = 2
     end
     object HCTSeries: TLineSeries
       Title = 'HCT'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clBlue
-      LinePen.Width = 2
     end
     object MCVSeries: TLineSeries
       Title = 'MCV'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clFuchsia
-      LinePen.Width = 2
     end
     object MCHSeries: TLineSeries
       Title = 'MCH'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clAqua
-      LinePen.Width = 2
     end
     object MCHCSeries: TLineSeries
       Title = 'MCHC'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clWhite
-      LinePen.Width = 2
     end
     object PLTSeries: TLineSeries
       Title = 'PLT'
@@ -109,7 +105,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clRed
       LinePen.Style = psDot
-      LinePen.Width = 2
     end
     object LYMpctSeries: TLineSeries
       Title = 'LYM%'
@@ -117,7 +112,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clLime
       LinePen.Style = psDot
-      LinePen.Width = 2
     end
     object MXDpctSeries: TLineSeries
       Title = 'MXD%'
@@ -125,7 +119,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clYellow
       LinePen.Style = psDot
-      LinePen.Width = 2
     end
     object NEUTpctSeries: TLineSeries
       Title = 'NEUT%'
@@ -133,7 +126,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clBlue
       LinePen.Style = psDot
-      LinePen.Width = 2
     end
     object LYMSeries: TLineSeries
       Title = 'LYM#'
@@ -141,7 +133,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clFuchsia
       LinePen.Style = psDot
-      LinePen.Width = 2
     end
     object MXDSeries: TLineSeries
       Title = 'MXD#'
@@ -149,7 +140,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clAqua
       LinePen.Style = psDot
-      LinePen.Width = 2
     end
     object NEUTSeries: TLineSeries
       Title = 'NEUT#'
@@ -157,7 +147,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clWhite
       LinePen.Style = psDot
-      LinePen.Width = 2
     end
     object RDW_SDSeries: TLineSeries
       Title = 'RDW-SD'
@@ -165,7 +154,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clRed
       LinePen.Style = psDash
-      LinePen.Width = 2
     end
     object RDW_CVSeries: TLineSeries
       Title = 'RDW-CV'
@@ -173,7 +161,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clLime
       LinePen.Style = psDash
-      LinePen.Width = 2
     end
     object PDWSeries: TLineSeries
       Title = 'PDW'
@@ -181,7 +168,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clYellow
       LinePen.Style = psDash
-      LinePen.Width = 2
     end
     object MPVSeries: TLineSeries
       Title = 'MPV'
@@ -189,7 +175,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clBlue
       LinePen.Style = psDash
-      LinePen.Width = 2
     end
     object P_LCRSeries: TLineSeries
       Title = 'P-LCR'
@@ -197,7 +182,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clFuchsia
       LinePen.Style = psDash
-      LinePen.Width = 2
     end
     object PCTSeries: TLineSeries
       Title = 'PCT'
@@ -205,7 +189,6 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clAqua
       LinePen.Style = psDash
-      LinePen.Width = 2
     end
   end
   object MainMenu1: TMainMenu
@@ -275,6 +258,21 @@ object Form1: TForm1
       object MenuItem20: TMenuItem
         Caption = 'Über'
       end
+    end
+  end
+  object ChartToolset: TChartToolset
+    left = 35
+    top = 294
+    object ChartToolsetZoomDragTool1: TZoomDragTool
+      Shift = [ssCtrl, ssLeft]
+      Brush.Style = bsClear
+    end
+    object ChartToolsetDataPointCrosshairTool1: TDataPointCrosshairTool
+      GrabRadius = 40
+    end
+    object ChartToolsetDataPointHintTool1: TDataPointHintTool
+      OnHint = ChartToolsetDataPointHintTool1Hint
+      UseDefaultHintText = False
     end
   end
 end
