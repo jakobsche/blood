@@ -133,7 +133,7 @@ function TForm1.NewFunctionItem(ASeries: TBasicChartSeries): TFunctionMenuItem;
 begin
   Result := TFunctionMenuItem.Create(Self);
   Result.Series := ASeries;
-  Result.Caption := (ASeries as TCustomChartSeries).Title;
+  Result.Caption := (ASeries as TCustomChartSeries).Title + #9 + ShortCutToDescription((ASeries as TCustomChartSeries).Title);
   Result.Checked := ASeries.Active;
   Result.OnClick := @FunctionItemClick;
 end;
