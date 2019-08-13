@@ -10,12 +10,14 @@ In a future version it will be possible to use variable data from external sourc
 
 ## Hints
 
-This program is free Open Source software. So you can use and modify it:
+This program is free Open Source software according to the limitations you can find in the file LICENSE. So you can use and modify it:
 
 1. Download and install Lazarus from lazarus-ide.org! Depending on your operating system you could need further tools to make Lazarus work. Some Linux distributions have packages to install Lazarus easily. This might work, if this Lazarus version is not to old. Otherwise follow the instructions of lazarus-ide.org to get Lazarus work
 2. Clone or download this repository!
 3. Open the file blood.lpi as project in Lazarus!
 4. Click the run button!
+
+Developers: Explore the code, if available documentation does not help to get features for your own applications!
 
 ## Toolset
 
