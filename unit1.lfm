@@ -1,11 +1,12 @@
 object Form1: TForm1
   Left = 437
-  Height = 460
+  Height = 465
   Top = 186
-  Width = 590
+  Width = 596
   Caption = 'Form1'
-  ClientHeight = 434
-  ClientWidth = 590
+  ClientHeight = 439
+  ClientWidth = 596
+  DesignTimePPI = 97
   Menu = MainMenu1
   OnCreate = FormCreate
   Position = poDefault
@@ -14,9 +15,9 @@ object Form1: TForm1
   object Chart: TChart
     Cursor = crCross
     Left = 0
-    Height = 434
+    Height = 439
     Top = 0
-    Width = 590
+    Width = 596
     AllowPanning = False
     AllowZoom = False
     AxisList = <    
@@ -192,8 +193,8 @@ object Form1: TForm1
     end
   end
   object MainMenu1: TMainMenu
-    left = 207
-    top = 84
+    left = 209
+    top = 85
     object MenuItem2: TMenuItem
       Caption = 'Datei'
       object MenuItem3: TMenuItem
@@ -262,7 +263,7 @@ object Form1: TForm1
   end
   object ChartToolset: TChartToolset
     left = 35
-    top = 294
+    top = 297
     object ChartToolsetZoomDragTool1: TZoomDragTool
       Shift = [ssCtrl, ssLeft]
       Brush.Style = bsClear
@@ -273,6 +274,10 @@ object Form1: TForm1
     object ChartToolsetDataPointHintTool1: TDataPointHintTool
       OnHint = ChartToolsetDataPointHintTool1Hint
       UseDefaultHintText = False
+    end
+    object ChartToolsetZoomMouseWheelTool1: TZoomMouseWheelTool
+      Shift = [ssCtrl]
+      ZoomFactor = 2
     end
   end
 end

@@ -13,6 +13,8 @@ procedure FillChart;
 
 function ShortCutToDescription(AShortCut: string): string;
 
+function ShortCutUnit(AShortCut: string): string;
+
 implementation
 
 uses Unit1;
@@ -537,32 +539,81 @@ begin
     P_LCRSeries.YValue[i] := 25.2;
     PCTSeries.YValue[i] := {-}0.1;
 
+    i := AddTime('14.8.2019 14:22');
+    WBCSeries.YValue[i] := 2.3;
+    RBCSeries.YValue[i] := 3.75;
+    HGBSeries.YValue[i] := 11.9;
+    HCTSeries.YValue[i] := 35.3;
+    MCVSeries.YValue[i] := 94.1;
+    MCHSeries.YValue[i] := 31.7;
+    MCHCSeries.YValue[i] := 33.7;
+    PLTSeries.YValue[i] := 159;
+    LYMpctSeries.YValue[i] := 41.7;
+    MXDpctSeries.YValue[i] := 15.2;
+    NEUTpctSeries.YValue[i] := 43.1;
+    LYMSeries.YValue[i] := 1;
+    MXDSeries.YValue[i] := 0.3;
+    NEUTSeries.YValue[i] := 1;
+    RDW_SDSeries.YValue[i] := 57.5;
+    RDW_CVSeries.YValue[i] := 16.8;
+    PDWSeries.YValue[i] := 9.9;
+    MPVSeries.YValue[i] := 9.3;
+    P_LCRSeries.YValue[i] := 20.4;
+    PCTSeries.YValue[i] := {-}0.15;
+
   end;
 end;
 
 function ShortCutToDescription(AShortCut: string): string;
 begin
-  if AShortCut = 'WBC' then Result := 'Anzahl weißer Blutzellen (white blood cells) in 1E3/'#206#188'l'
-  else if AShortCut = 'RBC' then Result := 'Anzahl roter Blutzellen (red blood cells) in 1E6/'#206#188'l'
-  else if AShortCut = 'HGB' then Result := 'Hämoglobin in g/dl'
-  else if AShortCut = 'HCT' then Result := 'Hämatokrit in Vol-%'
-  else if AShortCut = 'MCV' then Result := 'Mittlere Größer der peripheren Erythrozyten (mean corpuscular volume) in fl '
-  else if AShortCut = 'MCH' then Result := '(melanin concentrating hormone) in pg'
-  else if AShortCut = 'MCHC' then Result := 'Mittlere korpuskuläre Hämoglobinkonzentration (mean corpuscular/cellular hemoglobin concentration) in g/dl'
-  else if AShortCut = 'PLT' then Result := 'Blutplättchen = Thrombozyten (platelets) in 1E3/'#206#188'l'
-  else if AShortCut = 'LYM%' then Result := 'Lymphozyten in %'
-  else if AShortCut = 'MXD%' then Result := 'Monozyten, basophile und eosinophlie Granulozyten in %'
-  else if AShortCut = 'NEUT%' then Result := 'Neutrophile Granulozyten in %'
-  else if AShortCut = 'LYM#' then Result := 'Lymphozyten in 1E3/'#206#188'l'
-  else if AShortCut = 'MXD#' then Result := 'Monozyten, basophile und eosinophlie Granulozyten in 1E3/'#206#188'l'
-  else if AShortCut = 'NEUT#' then Result := 'Neutrophile Granulozyten in 1E3/ul'
-  else if AShortCut = 'RDW-SD' then Result := 'Verteilung der roten Blutzellen (red blood cell distribution width) in fl'
-  else if AShortCut = 'RDW-CV' then Result := 'Verteilung der roten Blutzellen (red blood cell distribution width) in %'
-  else if AShortCut = 'PDW' then Result := 'Thrombozytenverteilungsbreite in fl'
-  else if AShortCut = 'MPV' then Result := 'Mittleres Thrombozytenvolumen in fl'
-  else if AShortCut = 'P-LCR' then Result := '(platelett large cell ratio) in %'
-  else if AShortCut = 'PCT' then Result := 'Procalcitonin in %'
+  if AShortCut = 'WBC' then Result := 'Anzahl weißer Blutzellen (white blood cells) in ' + ShortCutUnit('WBC')
+  else if AShortCut = 'RBC' then Result := 'Anzahl roter Blutzellen (red blood cells) in ' + ShortCutUnit('RBC')
+  else if AShortCut = 'HGB' then Result := 'Hämoglobin in ' + ShortCutUnit('HGB')
+  else if AShortCut = 'HCT' then Result := 'Hämatokrit in ' + ShortCutUnit('HCT')
+  else if AShortCut = 'MCV' then Result := 'Mittlere Größer der peripheren Erythrozyten (mean corpuscular volume) ' + ShortCutUnit('MCV')
+  else if AShortCut = 'MCH' then Result := '(melanin concentrating hormone) in ' + ShortCutUnit('MCH')
+  else if AShortCut = 'MCHC' then Result := 'Mittlere korpuskuläre Hämoglobinkonzentration (mean corpuscular/cellular hemoglobin concentration) in ' + ShortCutUnit('MCHC')
+  else if AShortCut = 'PLT' then Result := 'Blutplättchen = Thrombozyten (platelets) in ' + ShortCutUnit('PLT')
+  else if AShortCut = 'LYM%' then Result := 'Lymphozyten in ' + ShortCutUnit('LYM%')
+  else if AShortCut = 'MXD%' then Result := 'Monozyten, basophile und eosinophlie Granulozyten in' + ShortCutUnit('MXD%')
+  else if AShortCut = 'NEUT%' then Result := 'Neutrophile Granulozyten in ' + ShortCutUnit('NEUT%')
+  else if AShortCut = 'LYM#' then Result := 'Lymphozyten in ' + ShortCutUnit('LYM#')
+  else if AShortCut = 'MXD#' then Result := 'Monozyten, basophile und eosinophlie Granulozyten in ' + ShortCutUnit('MXD#')
+  else if AShortCut = 'NEUT#' then Result := 'Neutrophile Granulozyten in ' + ShortCutUnit('NEUT#')
+  else if AShortCut = 'RDW-SD' then Result := 'Verteilung der roten Blutzellen (red blood cell distribution width) in ' + ShortCutUnit('RDW-SD')
+  else if AShortCut = 'RDW-CV' then Result := 'Verteilung der roten Blutzellen (red blood cell distribution width) in ' + ShortCutUnit('RDW-CV')
+  else if AShortCut = 'PDW' then Result := 'Thrombozytenverteilungsbreite in ' + ShortCutUnit('PDW')
+  else if AShortCut = 'MPV' then Result := 'Mittleres Thrombozytenvolumen in ' + ShortCutUnit('MPV')
+  else if AShortCut = 'P-LCR' then Result := '(platelett large cell ratio) in ' + ShortCutUnit('P-LCR')
+  else if AShortCut = 'PCT' then Result := 'Procalcitonin in ' + ShortCutUnit('PCT')
   else Result := AShortCut
+end;
+
+function ShortCutUnit(AShortCut: string): string;
+const
+  micro = #206#188;
+begin
+  if AShortCut = 'WBC' then Result := micro + 'l'
+  else if AShortCut = 'RBC' then Result := micro + 'l'
+  else if AShortCut = 'HGB' then Result := 'g/dl'
+  else if AShortCut = 'HCT' then Result := 'Vol-%'
+  else if AShortCut = 'MCV' then Result := 'fl '
+  else if AShortCut = 'MCH' then Result := 'pg'
+  else if AShortCut = 'MCHC' then Result := 'g/dl'
+  else if AShortCut = 'PLT' then Result := '1E3/' + micro + 'l'
+  else if AShortCut = 'LYM%' then Result := '%'
+  else if AShortCut = 'MXD%' then Result := '%'
+  else if AShortCut = 'NEUT%' then Result := '%'
+  else if AShortCut = 'LYM#' then Result := '1E3/' + micro + 'l'
+  else if AShortCut = 'MXD#' then Result := micro + 'l'
+  else if AShortCut = 'NEUT#' then Result := '1E3/ul'
+  else if AShortCut = 'RDW-SD' then Result := 'fl'
+  else if AShortCut = 'RDW-CV' then Result := '%'
+  else if AShortCut = 'PDW' then Result := 'fl'
+  else if AShortCut = 'MPV' then Result := 'fl'
+  else if AShortCut = 'P-LCR' then Result := '%'
+  else if AShortCut = 'PCT' then Result := '%'
+  else Result := ''
 end;
 
 initialization

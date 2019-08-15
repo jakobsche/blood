@@ -19,6 +19,7 @@ type
     ChartToolsetDataPointCrosshairTool1: TDataPointCrosshairTool;
     ChartToolsetDataPointHintTool1: TDataPointHintTool;
     ChartToolsetZoomDragTool1: TZoomDragTool;
+    ChartToolsetZoomMouseWheelTool1: TZoomMouseWheelTool;
     MainMenu1: TMainMenu;
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
@@ -112,7 +113,7 @@ end;
 procedure TForm1.ChartToolsetDataPointHintTool1Hint(ATool: TDataPointHintTool;
   const APoint: TPoint; var AHint: String);
 begin
-  AHint := Format('%s: %s, %f', [(ATool.Series as TLineSeries).Title, DateTimeToStr(ATool.NearestGraphPoint.X), ATool.NearestGraphPoint.Y])
+  AHint := Format('%s: (%s, %f %s)', [(ATool.Series as TLineSeries).Title, DateTimeToStr(ATool.NearestGraphPoint.X), ATool.NearestGraphPoint.Y, ShortCutUnit((ATool.Series as TLineSeries).Title)])
 end;
 
 procedure TForm1.FunctionItemClick(Sender: TObject);
