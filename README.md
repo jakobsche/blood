@@ -24,8 +24,10 @@ Artists: You can suggest graphical images, that can be used as icons and illustr
 ## Toolset
 
 Now the app contains a mouse toolset for the chart. You can use these functions:
-- If you move the mouse over the chart, then you see a hair cross through a data point while passing a measured value position
+- If you move the mouse over the chart, then you see a hair cross through a data point while passing a measured value position.
 - You can see the point data, if the mouse is on a mesured point.
 - You can zoom in by pressing the Ctrl button + the left mouse button + dragging the mouse to select a rectangular zoom area.
+- You can zoom by pressing the Ctrl button + rotating the mouse wheel.
+- You can zoom back to the full view by pressing the Ctrl button + the left mouse button
 
 For programmers: This is done by adding the ChartToolset to Form1 and configuring it in the object inspector + adding event handlers to Form1.
