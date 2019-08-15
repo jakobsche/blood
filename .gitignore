@@ -1,3 +1,4 @@
 backup
 *.bak
 lib
+deploy/x86_64-linux
