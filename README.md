@@ -27,9 +27,9 @@ Artists: You can suggest graphical images, that can be used as icons and illustr
 
 ## Compilation  with "make"
 
-This requires, that you have installed Lazarus and Free Pascal + some further required tools on your system. If make stops with errors, check out the errors to find out, what is missing, and fix it. The command to compile the app is
+This requires, that you have installed Lazarus and Free Pascal + some further required tools on your system. If make stops with errors, check out the messages to find out, what is missing, and fix it. The command to compile the app is
 
-make DEPLOY TargetCPU=<parameter> TargetOS=<parameter> ExeExt=<parameter>
+make DEPLOY TargetCPU=\<parameter\> TargetOS=\<parameter\> ExeExt=\<parameter\>
   
 The make command might fail, because makefile is not complete for all environments, yet. At least, it should work with 64-bit-Linux on PC, if all required tools (newest Lazarus-IDE with a compatible Free Pascal version and fullfilled requirements of both) are installed and found. If you have problems to compile yourself, send me your error messages, and use my zip files from the directory deploy. The file can be unpacked anywhere on your system, where you can run executable files from.
 
