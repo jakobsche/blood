@@ -277,7 +277,7 @@ object Form1: TForm1
     end
     object ChartToolsetZoomMouseWheelTool1: TZoomMouseWheelTool
       Shift = [ssCtrl]
-      ZoomFactor = 2
+      ZoomFactor = 1.25
     end
   end
 end
