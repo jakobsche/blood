@@ -45,6 +45,6 @@ Now the app contains a mouse toolset for the chart. You can use these functions:
 - You can zoom in by pressing the Ctrl button + the left mouse button + dragging the mouse to select a rectangular zoom area.
 - You can zoom by pressing the Ctrl button + rotating the mouse wheel.
 - You can zoom back to the full view by pressing the Ctrl button + the left mouse button
-- Dragging (left mouse button down) moves the chart content within the diagram view and the axis to keep them up-to-date.
+- Dragging (left mouse button down) moves the chart content within the diagram view. Axes and grid follow.
 
 For programmers: This is done by adding the ChartToolset to Form1 and configuring it in the object inspector + adding event handlers to Form1.
