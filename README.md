@@ -5,8 +5,12 @@ application that demonstrates the usage of a TChart component for multiple funct
 It includes 
 - the formatting of an axis for the type TDateTime, 
 - a legend and formatting line series to distinguish different functions
+- a menu to control, which series are displayed
+- a toolset to get interesting details into the view
 
-In a future version it will be possible to use variable data from external sources (files, ...)
+To see, what is Rapid Application Development (RAD) on a time scale, check the timeline related to what is done between the commits! Don't forget, that it is done for a lot of desktop computer types at once with free Open Source development tools only.
+
+In a future version, it will be possible to use variable data from external sources (files, ...). The coding will also be accelerated with Lazarus packages by the community or me (and you?).
 
 ## Hints
 
