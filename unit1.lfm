@@ -279,5 +279,8 @@ object Form1: TForm1
       Shift = [ssCtrl]
       ZoomFactor = 1.25
     end
+    object ChartToolsetPanDragTool1: TPanDragTool
+      Shift = [ssLeft]
+    end
   end
 end

@@ -18,6 +18,7 @@ type
     ChartToolset: TChartToolset;
     ChartToolsetDataPointCrosshairTool1: TDataPointCrosshairTool;
     ChartToolsetDataPointHintTool1: TDataPointHintTool;
+    ChartToolsetPanDragTool1: TPanDragTool;
     ChartToolsetZoomDragTool1: TZoomDragTool;
     ChartToolsetZoomMouseWheelTool1: TZoomMouseWheelTool;
     MainMenu1: TMainMenu;
