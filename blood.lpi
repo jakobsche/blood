@@ -42,7 +42,7 @@
         <PackageName Value="LCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="blood.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -65,6 +65,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="FctItem"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="polynomials.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Polynomials"/>
+      </Unit4>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

@@ -49,6 +49,10 @@ msgstr ""
 msgid "Über"
 msgstr ""
 
+#: tform1.menuitem21.caption
+msgid "&Kurzbeschreibung"
+msgstr ""
+
 #: tform1.menuitem3.caption
 msgid "&Neu"
 msgstr ""

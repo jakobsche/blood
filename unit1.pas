@@ -36,6 +36,7 @@ type
     MenuItem2: TMenuItem;
     MenuItem20: TMenuItem;
     Functionitems: TMenuItem;
+    MenuItem21: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
@@ -69,6 +70,8 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FunctionItemClick(Sender: TObject);
     procedure MenuItem11Click(Sender: TObject);
+    procedure MenuItem17Click(Sender: TObject);
+    procedure MenuItem21Click(Sender: TObject);
   private
     function InitFunctionsMenu: TMenuItem; {creates a chart content sensitive
       submenu}
@@ -84,7 +87,7 @@ var
 
 implementation
 
-uses FormEx;
+uses FormEx, LCLIntf;
 
 {$R *.lfm}
 
@@ -128,6 +131,16 @@ end;
 procedure TForm1.MenuItem11Click(Sender: TObject);
 begin
   Close
+end;
+
+procedure TForm1.MenuItem17Click(Sender: TObject);
+begin
+  OpenDocument('LICENSE.md')
+end;
+
+procedure TForm1.MenuItem21Click(Sender: TObject);
+begin
+  OpenDocument('README.md')
 end;
 
 function TForm1.InitFunctionsMenu: TMenuItem;

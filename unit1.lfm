@@ -1,12 +1,11 @@
 object Form1: TForm1
   Left = 437
-  Height = 465
+  Height = 460
   Top = 186
-  Width = 596
+  Width = 590
   Caption = 'Form1'
-  ClientHeight = 439
-  ClientWidth = 596
-  DesignTimePPI = 97
+  ClientHeight = 434
+  ClientWidth = 590
   Menu = MainMenu1
   OnCreate = FormCreate
   Position = poDefault
@@ -15,9 +14,9 @@ object Form1: TForm1
   object Chart: TChart
     Cursor = crCross
     Left = 0
-    Height = 439
+    Height = 434
     Top = 0
-    Width = 596
+    Width = 590
     AllowPanning = False
     AllowZoom = False
     AxisList = <    
@@ -193,8 +192,8 @@ object Form1: TForm1
     end
   end
   object MainMenu1: TMainMenu
-    left = 209
-    top = 85
+    left = 207
+    top = 84
     object MenuItem2: TMenuItem
       Caption = 'Datei'
       object MenuItem3: TMenuItem
@@ -247,8 +246,13 @@ object Form1: TForm1
       object MenuItem16: TMenuItem
         Caption = '-'
       end
+      object MenuItem21: TMenuItem
+        Caption = '&Kurzbeschreibung'
+        OnClick = MenuItem21Click
+      end
       object MenuItem17: TMenuItem
         Caption = '&Lizenzinformation'
+        OnClick = MenuItem17Click
       end
       object MenuItem18: TMenuItem
         Caption = 'Na&ch Updates suchen'
@@ -263,7 +267,7 @@ object Form1: TForm1
   end
   object ChartToolset: TChartToolset
     left = 35
-    top = 297
+    top = 294
     object ChartToolsetZoomDragTool1: TZoomDragTool
       Shift = [ssCtrl, ssLeft]
       Brush.Style = bsClear
