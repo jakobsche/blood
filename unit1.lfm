@@ -246,13 +246,13 @@ object Form1: TForm1
       object MenuItem16: TMenuItem
         Caption = '-'
       end
-      object MenuItem21: TMenuItem
+      object ReadmeItem: TMenuItem
         Caption = '&Kurzbeschreibung'
-        OnClick = MenuItem21Click
+        OnClick = ReadmeItemClick
       end
-      object MenuItem17: TMenuItem
+      object LicenseItem: TMenuItem
         Caption = '&Lizenzinformation'
-        OnClick = MenuItem17Click
+        OnClick = LicenseItemClick
       end
       object MenuItem18: TMenuItem
         Caption = 'Na&ch Updates suchen'

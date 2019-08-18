@@ -9,6 +9,11 @@ msgstr ""
 msgid "Funktionen"
 msgstr ""
 
+#: tform1.licenseitem.caption
+msgctxt "tform1.licenseitem.caption"
+msgid "&Lizenzinformation"
+msgstr ""
+
 #: tform1.menuitem1.caption
 msgid "&Ansicht"
 msgstr ""
@@ -33,10 +38,6 @@ msgstr ""
 msgid "&Onlinehilfe"
 msgstr ""
 
-#: tform1.menuitem17.caption
-msgid "&Lizenzinformation"
-msgstr ""
-
 #: tform1.menuitem18.caption
 msgid "Na&ch Updates suchen"
 msgstr ""
@@ -47,10 +48,6 @@ msgstr ""
 
 #: tform1.menuitem20.caption
 msgid "Über"
-msgstr ""
-
-#: tform1.menuitem21.caption
-msgid "&Kurzbeschreibung"
 msgstr ""
 
 #: tform1.menuitem3.caption
@@ -75,5 +72,10 @@ msgstr ""
 
 #: tform1.menuitem9.caption
 msgid "D&rucker einrichten ..."
+msgstr ""
+
+#: tform1.readmeitem.caption
+msgctxt "tform1.readmeitem.caption"
+msgid "&Kurzbeschreibung"
 msgstr ""
 

@@ -7,7 +7,7 @@ Target = $(TargetCPU)-$(TargetOS)
 
 DEPLOY: deploy/$(Target).zip
 
-deploy/$(Target).zip: deploy deploy/$(Target)/blood$(ExeExt)
+deploy/$(Target).zip: deploy deploy/$(Target)/blood$(ExeExt) deploy/$(Target)/LICENS.md deploy/$(Target)/README.md
 	pushd deploy
 	zip $(Target).zip $(Target)
 	popd

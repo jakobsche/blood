@@ -22,7 +22,7 @@
         <UnitName Value="Unit1"/>
         <IsVisibleTab Value="True"/>
         <TopLine Value="135"/>
-        <CursorPos X="27" Y="138"/>
+        <CursorPos X="3" Y="143"/>
         <UsageCount Value="85"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -157,19 +157,19 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="unit1.pas"/>
-        <Caret Line="126" Column="3" TopLine="117"/>
+        <Caret Line="117" Column="32" TopLine="94"/>
       </Position1>
       <Position2>
         <Filename Value="unit1.pas"/>
-        <Caret Line="132" Column="3" TopLine="117"/>
+        <Caret Line="120" Column="3" TopLine="105"/>
       </Position2>
       <Position3>
         <Filename Value="unit1.pas"/>
-        <Caret Line="114" Column="24" TopLine="94"/>
+        <Caret Line="132" Column="3" TopLine="105"/>
       </Position3>
       <Position4>
         <Filename Value="unit1.pas"/>
-        <Caret Line="117" Column="32" TopLine="94"/>
+        <Caret Line="126" Column="3" TopLine="105"/>
       </Position4>
       <Position5>
         <Filename Value="unit1.pas"/>
@@ -177,103 +177,103 @@
       </Position5>
       <Position6>
         <Filename Value="unit1.pas"/>
-        <Caret Line="132" Column="3" TopLine="105"/>
+        <Caret Line="132" Column="3" TopLine="120"/>
       </Position6>
       <Position7>
         <Filename Value="unit1.pas"/>
-        <Caret Line="126" Column="3" TopLine="105"/>
+        <Caret Line="120" Column="28" TopLine="117"/>
       </Position7>
       <Position8>
         <Filename Value="unit1.pas"/>
-        <Caret Line="120" Column="3" TopLine="105"/>
+        <Caret Line="115" Column="50" TopLine="100"/>
       </Position8>
       <Position9>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="132" Column="3" TopLine="120"/>
+        <Filename Value="blodat.pas"/>
+        <Caret Line="567" Column="93" TopLine="552"/>
       </Position9>
       <Position10>
         <Filename Value="unit1.pas"/>
-        <Caret Line="120" Column="28" TopLine="117"/>
+        <Caret Line="115" Column="35" TopLine="100"/>
       </Position10>
       <Position11>
         <Filename Value="unit1.pas"/>
-        <Caret Line="115" Column="50" TopLine="100"/>
+        <Caret Line="116" Column="35" TopLine="101"/>
       </Position11>
       <Position12>
-        <Filename Value="blodat.pas"/>
-        <Caret Line="567" Column="93" TopLine="552"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="147" Column="16" TopLine="122"/>
       </Position12>
       <Position13>
         <Filename Value="unit1.pas"/>
-        <Caret Line="115" Column="35" TopLine="100"/>
+        <Caret Line="148" Column="16" TopLine="123"/>
       </Position13>
       <Position14>
         <Filename Value="unit1.pas"/>
-        <Caret Line="116" Column="35" TopLine="101"/>
+        <Caret Line="147" Column="16" TopLine="122"/>
       </Position14>
       <Position15>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="147" Column="16" TopLine="122"/>
+        <Filename Value="polynomials.pas"/>
+        <Caret Line="16" Column="38"/>
       </Position15>
       <Position16>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="148" Column="16" TopLine="123"/>
+        <Filename Value="polynomials.pas"/>
+        <Caret Line="26" Column="64"/>
       </Position16>
       <Position17>
-        <Filename Value="unit1.pas"/>
-        <Caret Line="147" Column="16" TopLine="122"/>
+        <Filename Value="polynomials.pas"/>
+        <Caret Line="64" Column="39" TopLine="21"/>
       </Position17>
       <Position18>
         <Filename Value="polynomials.pas"/>
-        <Caret Line="16" Column="38"/>
+        <Caret Line="18" Column="25" TopLine="10"/>
       </Position18>
       <Position19>
         <Filename Value="polynomials.pas"/>
-        <Caret Line="26" Column="64"/>
+        <Caret Line="38" Column="32" TopLine="25"/>
       </Position19>
       <Position20>
         <Filename Value="polynomials.pas"/>
-        <Caret Line="64" Column="39" TopLine="21"/>
+        <Caret Line="27" Column="17" TopLine="12"/>
       </Position20>
       <Position21>
         <Filename Value="polynomials.pas"/>
-        <Caret Line="18" Column="25" TopLine="10"/>
+        <Caret Line="78" Column="30" TopLine="53"/>
       </Position21>
       <Position22>
         <Filename Value="polynomials.pas"/>
-        <Caret Line="38" Column="32" TopLine="25"/>
+        <Caret Line="67" Column="38" TopLine="39"/>
       </Position22>
       <Position23>
         <Filename Value="polynomials.pas"/>
-        <Caret Line="27" Column="17" TopLine="12"/>
+        <Caret Line="73" Column="28" TopLine="54"/>
       </Position23>
       <Position24>
-        <Filename Value="polynomials.pas"/>
-        <Caret Line="78" Column="30" TopLine="53"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="153" Column="16" TopLine="124"/>
       </Position24>
       <Position25>
-        <Filename Value="polynomials.pas"/>
-        <Caret Line="67" Column="38" TopLine="39"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="136" Column="26" TopLine="124"/>
       </Position25>
       <Position26>
-        <Filename Value="polynomials.pas"/>
-        <Caret Line="73" Column="28" TopLine="54"/>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="88" Column="33" TopLine="79"/>
       </Position26>
       <Position27>
         <Filename Value="unit1.pas"/>
-        <Caret Line="153" Column="16" TopLine="124"/>
+        <Caret Line="90" Column="33" TopLine="81"/>
       </Position27>
       <Position28>
         <Filename Value="unit1.pas"/>
-        <Caret Line="136" Column="26" TopLine="124"/>
+        <Caret Line="136" Column="23" TopLine="134"/>
       </Position28>
       <Position29>
         <Filename Value="unit1.pas"/>
-        <Caret Line="88" Column="33" TopLine="79"/>
+        <Caret Line="33" Column="11" TopLine="16"/>
       </Position29>
       <Position30>
         <Filename Value="unit1.pas"/>
-        <Caret Line="90" Column="33" TopLine="81"/>
+        <Caret Line="138" Column="3" TopLine="135"/>
       </Position30>
     </JumpHistory>
     <RunParams>
