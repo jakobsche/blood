@@ -47,6 +47,29 @@ procedure FillChart;
       MCVSeries.AddX(DT);
       HCTSeries.AddX(DT);
       HGBSeries.AddX(DT);
+      GlucoseSeries.AddX(DT);
+      BilirubinGesSeries.AddX(DT);
+      BilirubinDirSeries.AddX(DT);
+      BilirubinIndSeries.AddX(DT);
+      GOTSeries.AddX(DT);
+      GPTSeries.AddX(DT);
+      Y_GTSeries.AddX(DT);
+      GLDHSeries.AddX(DT);
+      APSeries.AddX(DT);
+      NaSeries.AddX(DT);
+      KSeries.AddX(DT);
+      HarnsaeureSeries.AddX(DT);
+      KreatininSeries.AddX(DT);
+      MDRDSeries.AddX(DT);
+      GFRSeries.AddX(DT);
+      LDHSeries.AddX(DT);
+      GEwSeries.AddX(DT);
+      AlbuminSeries.AddX(DT);
+      CRPSeries.AddX(DT);
+      CEASeries.AddX(DT);
+      CA19_9Series.AddX(DT);
+      CaSeries.AddX(DT);
+      CaKorrSeries.AddX(DT);
     end
   end;
 
@@ -76,6 +99,28 @@ begin
     MPVSeries.YValue[i] := 9.4; {7..12}
     P_LCRSeries.YValue[i] := 21.1;
     PCTSeries.YValue[i] := {-}0.11;
+    GlucoseSeries.YValue[i] := 0;
+    BilirubinGesSeries.YValue[i] := 0;
+    BilirubinDirSeries.YValue[i] := 0;
+    BilirubinIndSeries.YValue[i] := 0;
+    GOTSeries.YValue[i] := 0;
+    Y_GTSeries.YValue[i] := 0;
+    GLDHSeries.YValue[i] := 0;
+    APSeries.YValue[i] := 0;
+    NaSeries.YValue[i] := 0;
+    KSeries.YValue[i] := 0;
+    HarnsaeureSeries.YValue[i] := 0;
+    KreatininSeries.YValue[i] := 0;
+    MDRDSeries.YValue[i] := 0;
+    GFRSeries.YValue[i] := 0;
+    LDHSeries.YValue[i] := 0;
+    GEwSeries.YValue[i] := 0;
+    AlbuminSeries.YValue[i] := 0;
+    CRPSeries.YValue[i] := 0;
+    CEASeries.YValue[i] := 0;
+    CA19_9Series.YValue[i] := 0;
+    CaSeries.YValue[i] := 0;
+    CaKorrSeries.YValue[i] := 0;
 
     i := AddTime('5.11.2018 10:19');
     WBCSeries.YValue[i] := 5.3;
@@ -566,7 +611,7 @@ end;
 
 function ShortCutToDescription(AShortCut: string): string;
 begin
-  if AShortCut = 'WBC' then Result := 'Anzahl weißer Blutzellen (white blood cells) in ' + ShortCutUnit('WBC')
+  if AShortCut = 'WBC' then Result := 'Anzahl weißer Blutzellen (white blood cells, Leukozyten) in ' + ShortCutUnit('WBC')
   else if AShortCut = 'RBC' then Result := 'Anzahl roter Blutzellen (red blood cells) in ' + ShortCutUnit('RBC')
   else if AShortCut = 'HGB' then Result := 'Hämoglobin in ' + ShortCutUnit('HGB')
   else if AShortCut = 'HCT' then Result := 'Hämatokrit in ' + ShortCutUnit('HCT')
@@ -593,8 +638,8 @@ function ShortCutUnit(AShortCut: string): string;
 const
   micro = #206#188;
 begin
-  if AShortCut = 'WBC' then Result := micro + 'l'
-  else if AShortCut = 'RBC' then Result := micro + 'l'
+  if AShortCut = 'WBC' then Result := '1E3/' + micro + 'l'
+  else if AShortCut = 'RBC' then Result := '1E6/' + micro + 'l'
   else if AShortCut = 'HGB' then Result := 'g/dl'
   else if AShortCut = 'HCT' then Result := 'Vol-%'
   else if AShortCut = 'MCV' then Result := 'fl '

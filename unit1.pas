@@ -15,6 +15,29 @@ type
 
   TForm1 = class(TForm)
     Chart: TChart;
+    BilirubinGesSeries: TLineSeries;
+    BilirubinDirSeries: TLineSeries;
+    BilirubinIndSeries: TLineSeries;
+    APSeries: TLineSeries;
+    AlbuminSeries: TLineSeries;
+    CEASeries: TLineSeries;
+    CA19_9Series: TLineSeries;
+    CaSeries: TLineSeries;
+    CaKorrSeries: TLineSeries;
+    CRPSeries: TLineSeries;
+    GEwSeries: TLineSeries;
+    LDHSeries: TLineSeries;
+    GFRSeries: TLineSeries;
+    MDRDSeries: TLineSeries;
+    KreatininSeries: TLineSeries;
+    HarnsaeureSeries: TLineSeries;
+    KSeries: TLineSeries;
+    NaSeries: TLineSeries;
+    GLDHSeries: TLineSeries;
+    Y_GTSeries: TLineSeries;
+    GPTSeries: TLineSeries;
+    GOTSeries: TLineSeries;
+    GlucoseSeries: TLineSeries;
     ChartToolset: TChartToolset;
     ChartToolsetDataPointCrosshairTool1: TDataPointCrosshairTool;
     ChartToolsetDataPointHintTool1: TDataPointHintTool;
@@ -94,18 +117,16 @@ uses FormEx, LCLIntf;
 { TForm1 }
 
 procedure TForm1.FormCreate(Sender: TObject);
-const
-  N = 200;
-  Min = -10;
-  Max = 10;
 var
   i: Integer;
   x: Double;
 begin
   Caption := Application.Title;
   FormAdjust(Self); {adapt the form size and position to the screen, should
-    always be used in an app's main form}
-  FillChart; {insert data and draw the series}
+    always be used in an app's main form. It only does adjustments on systems that
+    don't support Position = poDefault correct, should therefore be called during
+    the first appearance of a form on a computer}
+  FillChart; {insert sample data and draw the series}
   InitFunctionsMenu; {add chart content sensitive menu items}
 end;
 

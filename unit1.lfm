@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 437
+  Left = 432
   Height = 460
-  Top = 186
+  Top = 177
   Width = 590
   Caption = 'Form1'
   ClientHeight = 434
@@ -189,6 +189,75 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clAqua
       LinePen.Style = psDash
+    end
+    object GlucoseSeries: TLineSeries
+      Title = 'Glucose'
+    end
+    object BilirubinGesSeries: TLineSeries
+      Title = 'Bilirubin ges.'
+    end
+    object BilirubinDirSeries: TLineSeries
+      Title = 'Bilirubin direkt'
+    end
+    object BilirubinIndSeries: TLineSeries
+      Title = 'Bilirubin indirekt'
+    end
+    object GOTSeries: TLineSeries
+      Title = 'GOT'
+    end
+    object GPTSeries: TLineSeries
+      Title = 'GPT'
+    end
+    object Y_GTSeries: TLineSeries
+      Title = 'Y-GT'
+    end
+    object GLDHSeries: TLineSeries
+      Title = 'GLDH'
+    end
+    object APSeries: TLineSeries
+      Title = 'AP'
+    end
+    object NaSeries: TLineSeries
+      Title = 'Natrium'
+    end
+    object KSeries: TLineSeries
+      Title = 'Kalium'
+    end
+    object HarnsaeureSeries: TLineSeries
+      Title = 'Harnsäure'
+    end
+    object KreatininSeries: TLineSeries
+      Title = 'Kreatinin'
+    end
+    object MDRDSeries: TLineSeries
+      Title = 'MDRDFiltration'
+    end
+    object GFRSeries: TLineSeries
+      Title = 'GFR (CKD-EPI)'
+    end
+    object LDHSeries: TLineSeries
+      Title = 'LDH'
+    end
+    object GEwSeries: TLineSeries
+      Title = 'Gesamteiweiß'
+    end
+    object AlbuminSeries: TLineSeries
+      Title = 'Albumin'
+    end
+    object CRPSeries: TLineSeries
+      Title = 'CRP'
+    end
+    object CEASeries: TLineSeries
+      Title = 'CEA'
+    end
+    object CA19_9Series: TLineSeries
+      Title = 'CA 19-9'
+    end
+    object CaSeries: TLineSeries
+      Title = 'Calcium'
+    end
+    object CaKorrSeries: TLineSeries
+      Title = 'Ca (korrigiert)'
     end
   end
   object MainMenu1: TMainMenu

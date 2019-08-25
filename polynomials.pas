@@ -84,8 +84,15 @@ begin
 end;
 
 function TPolynomial.GetValue: Extended;
+var
+  i: Integer;
 begin
- Result := 0;
+ if Degree = 0 then Result := Coefficients[0]
+ else begin
+   Result := Coefficients[Degree] * Argument + Coefficients[Degree - 1];
+   for i := Degree - 2 downto 0 do
+      Result := Result * Argument + Coefficients[i]
+ end;
 end;
 
 procedure TPolynomial.SetArgument(AValue: Extended);
