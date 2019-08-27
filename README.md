@@ -8,18 +8,18 @@ It includes
 - a menu to control, which series are displayed
 - a toolset to get interesting details into the view
 
-To see, what is Rapid Application Development (RAD) on a time scale, check the timeline related to what is done between the commits! Don't forget, that it is done for a lot of desktop computer types at once with free Open Source development tools only.
+To see, what is Rapid Application Development (RAD) on a time scale, check the timeline related to what is done between the commits! Because RAD also includes big effects with few code lines, also compare the feature growth in the compiled revisions to each other! Don't forget, that it is done for a lot of desktop computer types at once with free Open Source development tools only.
 
 In a future version, it will be possible to use variable data from external sources (files, ...). The coding will also be accelerated with Lazarus packages by the community or me (and you?).
 
 ## Hints
 
-This program is free Open Source software according to the limitations you can find in the file LICENSE. So you can use and modify it:
+This program is free Open Source software according to the limitations you can find in the file LICENSE.md. So you can use and modify it:
 
 1. Download and install Lazarus from lazarus-ide.org! Depending on your operating system you could need further tools to make Lazarus work. Some Linux distributions have packages to install Lazarus easily. This might work, if this Lazarus version is not to old. Otherwise follow the instructions of lazarus-ide.org to get Lazarus work
 2. Clone or download this repository!
 3. Open the file blood.lpi as project in Lazarus!
-4. Click the run button! It will be compiled and executed, or you get error messages. If there are missing packages, try to find them as my GitHub repository or enywhere else. After a successful compile, it runs immediately. Additionally you get the executable file with the name "blood" and the extension for executable applications of your operating system. This file runs from a location of your choice on your machine or similar sufficiently similar devices.
+4. Click the run button! It will be compiled and executed, or you get error messages. If there are missing packages, try to find them as my GitHub repository or anywhere else. After a successful compile, it runs immediately. Additionally, you get the executable file with the name "blood" and the extension for executable applications of your operating system. This file runs from a location of your choice on your machine or sufficiently similar devices.
 
 Developers: Explore the code, if available documentation does not help to get features for your own projects!
 
