@@ -1,23 +1,22 @@
 object Form1: TForm1
-  Left = 432
+  Left = 676
   Height = 460
-  Top = 177
+  Top = 246
   Width = 590
   Caption = 'Form1'
-  ClientHeight = 434
+  ClientHeight = 460
   ClientWidth = 590
   Menu = MainMenu1
   OnCreate = FormCreate
   Position = poDefault
-  LCLVersion = '2.1.0.0'
+  LCLVersion = '2.0.4.0'
   WindowState = wsMaximized
   object Chart: TChart
     Cursor = crCross
     Left = 0
-    Height = 434
+    Height = 460
     Top = 0
     Width = 590
-    AllowPanning = False
     AllowZoom = False
     AxisList = <    
       item
@@ -343,6 +342,7 @@ object Form1: TForm1
     end
     object ChartToolsetDataPointCrosshairTool1: TDataPointCrosshairTool
       GrabRadius = 40
+      CrosshairPen.Color = clWhite
     end
     object ChartToolsetDataPointHintTool1: TDataPointHintTool
       OnHint = ChartToolsetDataPointHintTool1Hint

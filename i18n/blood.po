@@ -5,3 +5,75 @@ msgstr "Content-Type: text/plain; charset=UTF-8"
 msgid "Form1"
 msgstr ""
 
+#: tform1.functionitems.caption
+msgid "Funktionen"
+msgstr ""
+
+#: tform1.licenseitem.caption
+msgid "&Lizenzinformation"
+msgstr ""
+
+#: tform1.menuitem1.caption
+msgid "&Ansicht"
+msgstr ""
+
+#: tform1.menuitem11.caption
+msgid "Beenden"
+msgstr ""
+
+#: tform1.menuitem12.caption
+msgid "&Hilfe"
+msgstr ""
+
+#: tform1.menuitem13.caption
+msgid "Hilfeinhalte"
+msgstr ""
+
+#: tform1.menuitem14.caption
+msgid "Hilfe-&Index"
+msgstr ""
+
+#: tform1.menuitem15.caption
+msgid "&Onlinehilfe"
+msgstr ""
+
+#: tform1.menuitem18.caption
+msgid "Na&ch Updates suchen"
+msgstr ""
+
+#: tform1.menuitem2.caption
+msgid "Datei"
+msgstr ""
+
+#: tform1.menuitem20.caption
+msgid "Über"
+msgstr ""
+
+#: tform1.menuitem3.caption
+msgid "&Neu"
+msgstr ""
+
+#: tform1.menuitem4.caption
+msgid "Öffnen ..."
+msgstr ""
+
+#: tform1.menuitem5.caption
+msgid "&Speichern"
+msgstr ""
+
+#: tform1.menuitem6.caption
+msgid "Speichern unter"
+msgstr ""
+
+#: tform1.menuitem8.caption
+msgid "&Drucken"
+msgstr ""
+
+#: tform1.menuitem9.caption
+msgid "D&rucker einrichten ..."
+msgstr ""
+
+#: tform1.readmeitem.caption
+msgid "&Kurzbeschreibung"
+msgstr ""
+
