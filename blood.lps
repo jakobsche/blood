@@ -7,7 +7,7 @@
       <Unit0>
         <Filename Value="blood.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
         <CursorPos X="5"/>
         <UsageCount Value="104"/>
         <Loaded Value="True"/>
@@ -19,9 +19,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="32"/>
-        <CursorPos X="21" Y="40"/>
+        <TopLine Value="107"/>
+        <CursorPos Y="133"/>
         <UsageCount Value="104"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -30,10 +29,12 @@
         <Filename Value="blodat.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="BloDat"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="608"/>
-        <CursorPos X="47" Y="633"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="74" Y="40"/>
         <UsageCount Value="102"/>
+        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="fctitem.pas"/>
@@ -176,7 +177,7 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit20>
     </Units>
-    <JumpHistory Count="23" HistoryIndex="22">
+    <JumpHistory Count="24" HistoryIndex="23">
       <Position1>
         <Filename Value="unit1.pas"/>
         <Caret Line="137" Column="23" TopLine="134"/>
@@ -269,6 +270,10 @@
         <Filename Value="unit1.pas"/>
         <Caret Line="64" Column="26" TopLine="56"/>
       </Position23>
+      <Position24>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="133" TopLine="107"/>
+      </Position24>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
