@@ -8,7 +8,11 @@
         <Filename Value="blood.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
+<<<<<<< HEAD
         <CursorPos X="5"/>
+=======
+        <CursorPos X="11" Y="16"/>
+>>>>>>> 4aa697b756bcaf38b3bd0c622826c8ba80cbbf48
         <UsageCount Value="104"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -19,8 +23,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
+<<<<<<< HEAD
         <TopLine Value="107"/>
         <CursorPos Y="133"/>
+=======
+        <TopLine Value="32"/>
+        <CursorPos X="25" Y="35"/>
+>>>>>>> 4aa697b756bcaf38b3bd0c622826c8ba80cbbf48
         <UsageCount Value="104"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -31,8 +40,13 @@
         <UnitName Value="BloDat"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
+<<<<<<< HEAD
         <TopLine Value="11"/>
         <CursorPos X="74" Y="40"/>
+=======
+        <TopLine Value="108"/>
+        <CursorPos Y="125"/>
+>>>>>>> 4aa697b756bcaf38b3bd0c622826c8ba80cbbf48
         <UsageCount Value="102"/>
         <Loaded Value="True"/>
       </Unit2>

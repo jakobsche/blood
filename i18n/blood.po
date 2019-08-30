@@ -10,6 +10,7 @@ msgid "Funktionen"
 msgstr ""
 
 #: tform1.licenseitem.caption
+msgctxt "tform1.licenseitem.caption"
 msgid "&Lizenzinformation"
 msgstr ""
 
