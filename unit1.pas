@@ -57,7 +57,7 @@ type
     MenuItem18: TMenuItem;
     MenuItem19: TMenuItem;
     MenuItem2: TMenuItem;
-    MenuItem20: TMenuItem;
+    AboutItem: TMenuItem;
     Functionitems: TMenuItem;
     ReadmeItem: TMenuItem;
     MenuItem3: TMenuItem;
@@ -94,6 +94,7 @@ type
     procedure FunctionItemClick(Sender: TObject);
     procedure MenuItem11Click(Sender: TObject);
     procedure LicenseItemClick(Sender: TObject);
+    procedure AboutItemClick(Sender: TObject);
     procedure ReadmeItemClick(Sender: TObject);
   private
     function InitFunctionsMenu: TMenuItem; {creates a chart content sensitive
@@ -110,7 +111,7 @@ var
 
 implementation
 
-uses FormEx, LCLIntf;
+uses FormEx, LCLIntf, About;
 
 {$R *.lfm}
 
@@ -157,6 +158,11 @@ end;
 procedure TForm1.LicenseItemClick(Sender: TObject);
 begin
   OpenDocument('LICENSE.md')
+end;
+
+procedure TForm1.AboutItemClick(Sender: TObject);
+begin
+  AboutBox.ShowModal
 end;
 
 procedure TForm1.ReadmeItemClick(Sender: TObject);

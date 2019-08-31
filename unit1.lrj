@@ -17,5 +17,5 @@
 {"hash":135802647,"name":"tform1.readmeitem.caption","sourcebytes":[38,75,117,114,122,98,101,115,99,104,114,101,105,98,117,110,103],"value":"&Kurzbeschreibung"},
 {"hash":25555966,"name":"tform1.licenseitem.caption","sourcebytes":[38,76,105,122,101,110,122,105,110,102,111,114,109,97,116,105,111,110],"value":"&Lizenzinformation"},
 {"hash":46830190,"name":"tform1.menuitem18.caption","sourcebytes":[78,97,38,99,104,32,85,112,100,97,116,101,115,32,115,117,99,104,101,110],"value":"Na&ch Updates suchen"},
-{"hash":13445314,"name":"tform1.menuitem20.caption","sourcebytes":[195,156,98,101,114],"value":"\u00DCber"}
+{"hash":13445314,"name":"tform1.aboutitem.caption","sourcebytes":[195,156,98,101,114],"value":"\u00DCber"}
 ]}

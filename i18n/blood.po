@@ -1,6 +1,33 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+#: taboutbox.bitbtn1.caption
+msgid "&Schließen"
+msgstr ""
+
+#: taboutbox.bitbtn2.caption
+msgid "&GitHub"
+msgstr ""
+
+#: taboutbox.caption
+msgid "AboutBox"
+msgstr ""
+
+#: taboutbox.label1.caption
+msgid ""
+"Anwendungsname: Blood\n"
+"Autor: Andreas Jakobsche\n"
+"Lizenz: MIT \n"
+"\n"
+"Details, Quelltext und diese ausführbare Version gibt ea auf GitHub.\n"
+"Dort kann man sich auch mitwirkend beteiligen, z.B. um diesen Dialog zu verbessern.\n"
+msgstr ""
+
+#: tform1.aboutitem.caption
+msgctxt "tform1.aboutitem.caption"
+msgid "Über"
+msgstr ""
+
 #: tform1.caption
 msgid "Form1"
 msgstr ""
@@ -44,10 +71,6 @@ msgstr ""
 
 #: tform1.menuitem2.caption
 msgid "Datei"
-msgstr ""
-
-#: tform1.menuitem20.caption
-msgid "Über"
 msgstr ""
 
 #: tform1.menuitem3.caption

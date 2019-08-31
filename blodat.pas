@@ -250,7 +250,7 @@ begin
     RDW_SDSeries.YValue[i] := 50.2;
     RDW_CVSeries.YValue[i] := 14.5;
     PDWSeries.YValue[i] := 10.4;
-    MPVSeries.YValue[i] := -8.9;
+    MPVSeries.YValue[i] := {-}8.9;
     P_LCRSeries.YValue[i] := 18.2;
     PCTSeries.YValue[i] := {-}0.14;
 
