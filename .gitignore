@@ -2,3 +2,5 @@ backup
 *.bak
 lib
 deploy/x86_64-linux
+deploy/i386-darwin
+.DS_Store
