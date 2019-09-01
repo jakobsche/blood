@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 655
+  Left = 708
   Height = 460
-  Top = 199
+  Top = 167
   Width = 590
   Caption = 'Form1'
   ClientHeight = 460
@@ -191,72 +191,112 @@ object Form1: TForm1
     end
     object GlucoseSeries: TLineSeries
       Title = 'Glucose'
+      LinePen.Color = clWhite
+      LinePen.Style = psDash
+      LineType = ltNone
     end
     object BilirubinGesSeries: TLineSeries
       Title = 'Bilirubin ges.'
+      LinePen.Color = clRed
     end
     object BilirubinDirSeries: TLineSeries
       Title = 'Bilirubin direkt'
+      LinePen.Color = clLime
     end
     object BilirubinIndSeries: TLineSeries
       Title = 'Bilirubin indirekt'
+      LinePen.Color = clYellow
     end
     object GOTSeries: TLineSeries
       Title = 'GOT'
+      LinePen.Color = clBlue
     end
     object GPTSeries: TLineSeries
       Title = 'GPT'
+      LinePen.Color = clFuchsia
     end
     object Y_GTSeries: TLineSeries
       Title = 'Y-GT'
+      LinePen.Color = clAqua
     end
     object GLDHSeries: TLineSeries
       Title = 'GLDH'
+      LinePen.Color = clWhite
     end
     object APSeries: TLineSeries
       Title = 'AP'
+      LinePen.Color = clRed
+      LinePen.Style = psDot
     end
     object NaSeries: TLineSeries
       Title = 'Natrium'
+      LinePen.Color = clLime
+      LinePen.Style = psDot
     end
     object KSeries: TLineSeries
       Title = 'Kalium'
+      LinePen.Color = clYellow
+      LinePen.Style = psDot
     end
     object HarnsaeureSeries: TLineSeries
       Title = 'Harnsäure'
+      LinePen.Color = clBlue
+      LinePen.Style = psDot
     end
     object KreatininSeries: TLineSeries
       Title = 'Kreatinin'
+      LinePen.Color = clFuchsia
+      LinePen.Style = psDot
     end
     object MDRDSeries: TLineSeries
       Title = 'MDRDFiltration'
+      LinePen.Color = clAqua
+      LinePen.Style = psDot
     end
     object GFRSeries: TLineSeries
       Title = 'GFR (CKD-EPI)'
+      LinePen.Color = clWhite
+      LinePen.Style = psDot
     end
     object LDHSeries: TLineSeries
       Title = 'LDH'
+      LinePen.Color = clRed
+      LinePen.Cosmetic = False
+      LinePen.Style = psDash
     end
     object GEwSeries: TLineSeries
       Title = 'Gesamteiweiß'
+      LinePen.Color = clLime
+      LinePen.Style = psDash
     end
     object AlbuminSeries: TLineSeries
       Title = 'Albumin'
+      LinePen.Color = clYellow
+      LinePen.Style = psDash
     end
     object CRPSeries: TLineSeries
       Title = 'CRP'
+      LinePen.Color = clBlue
+      LinePen.Style = psDash
     end
     object CEASeries: TLineSeries
       Title = 'CEA'
+      LinePen.Color = clFuchsia
+      LinePen.Style = psDash
     end
     object CA19_9Series: TLineSeries
       Title = 'CA 19-9'
+      LinePen.Color = clAqua
+      LinePen.Style = psDash
     end
     object CaSeries: TLineSeries
       Title = 'Calcium'
+      LinePen.Color = clWhite
+      LinePen.Style = psDash
     end
     object CaKorrSeries: TLineSeries
       Title = 'Ca (korrigiert)'
+      LinePen.Color = clRed
     end
   end
   object MainMenu1: TMainMenu

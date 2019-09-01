@@ -19,8 +19,8 @@ msgid ""
 "Autor: Andreas Jakobsche\n"
 "Lizenz: MIT \n"
 "\n"
-"Details, Quelltext und diese ausführbare Version gibt ea auf GitHub.\n"
-"Dort kann man sich auch mitwirkend beteiligen, z.B. um diesen Dialog zu verbessern.\n"
+"Details, Quelltext und diese ausführbare Version gibt es auf GitHub.\n"
+"Dort kann man auch mitwirken, z.B. um diesen Dialog zu verbessern.\n"
 msgstr ""
 
 #: tform1.aboutitem.caption

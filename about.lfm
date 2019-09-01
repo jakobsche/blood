@@ -10,18 +10,20 @@ object AboutBox: TAboutBox
   LCLVersion = '2.0.4.0'
   object Label1: TLabel
     Left = 0
-    Height = 96
+    Height = 128
     Top = 0
     Width = 410
     Align = alTop
-    Caption = 'Anwendungsname: Blood'#10'Autor: Andreas Jakobsche'#10'Lizenz: MIT '#10#10'Details, Quelltext und diese ausführbare Version gibt ea auf GitHub.'#10'Dort kann man sich auch mitwirkend beteiligen, z.B. um diesen Dialog zu verbessern.'
+    Caption = 'Anwendungsname: Blood'#10'Autor: Andreas Jakobsche'#10'Lizenz: MIT '#10#10'Details, Quelltext und diese ausführbare Version gibt es auf GitHub.'#10'Dort kann man auch mitwirken, z.B. um diesen Dialog zu verbessern.'
     ParentColor = False
+    WordWrap = True
   end
   object BitBtn1: TBitBtn
     Left = 16
     Height = 30
-    Top = 256
+    Top = 264
     Width = 75
+    Anchors = [akLeft, akBottom]
     Caption = '&Schließen'
     Default = True
     OnClick = BitBtn1Click
@@ -30,8 +32,9 @@ object AboutBox: TAboutBox
   object BitBtn2: TBitBtn
     Left = 96
     Height = 30
-    Top = 256
+    Top = 264
     Width = 75
+    Anchors = [akLeft, akBottom]
     Caption = '&GitHub'
     OnClick = BitBtn2Click
     TabOrder = 1
