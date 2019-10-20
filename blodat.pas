@@ -47,7 +47,16 @@ procedure FillChart;
       MCVSeries.AddX(DT);
       HCTSeries.AddX(DT);
       HGBSeries.AddX(DT);
-      GlucoseSeries.AddX(DT);
+    end
+  end;
+
+  function AddTimeExtLab(DateTimeStr: string): Integer;
+  var
+    DT: TDateTime;
+  begin
+    DT := StrToDateTime(DateTimeStr);
+    with Form1 do begin
+      Result := GlucoseSeries.AddX(DT);
       BilirubinGesSeries.AddX(DT);
       BilirubinDirSeries.AddX(DT);
       BilirubinIndSeries.AddX(DT);
@@ -99,6 +108,7 @@ begin
     MPVSeries.YValue[i] := 9.4; {7..12}
     P_LCRSeries.YValue[i] := 21.1;
     PCTSeries.YValue[i] := {-}0.11;
+    i := AddTimeExtLab('29.10.2018 10:20');
     GlucoseSeries.YValue[i] := 0;
     BilirubinGesSeries.YValue[i] := 0;
     BilirubinDirSeries.YValue[i] := 0;

@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, TAGraph, TASeries, Forms, Controls, Graphics,
-  Dialogs, Menus, TADrawUtils, TACustomSeries, BloDat, FctItem,
+  Dialogs, Menus, TACustomSeries, BloDat, FctItem,
   TAChartAxisUtils, TATools, Types;
 
 type
@@ -97,7 +97,7 @@ type
     procedure AboutItemClick(Sender: TObject);
     procedure ReadmeItemClick(Sender: TObject);
   private
-    function InitFunctionsMenu: TMenuItem; {creates a chart content sensitive
+    procedure InitFunctionsMenu; {creates a chart content sensitive
       submenu}
     function NewFunctionItem(ASeries: TBasicChartSeries): TFunctionMenuItem;
       {creates a chart series determined submenu item}
@@ -118,9 +118,6 @@ uses FormEx, LCLIntf, About;
 { TForm1 }
 
 procedure TForm1.FormCreate(Sender: TObject);
-var
-  i: Integer;
-  x: Double;
 begin
   Caption := Application.Title;
   FormAdjust(Self); {adapt the form size and position to the screen, should
@@ -170,7 +167,7 @@ begin
   OpenDocument('README.md')
 end;
 
-function TForm1.InitFunctionsMenu: TMenuItem;
+procedure TForm1.InitFunctionsMenu;
 var
   i: Integer;
 begin

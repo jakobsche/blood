@@ -1,11 +1,11 @@
 object Form1: TForm1
   Left = 708
-  Height = 460
+  Height = 481
   Top = 167
-  Width = 590
+  Width = 714
   Caption = 'Form1'
-  ClientHeight = 460
-  ClientWidth = 590
+  ClientHeight = 481
+  ClientWidth = 714
   Menu = MainMenu1
   OnCreate = FormCreate
   Position = poDefault
@@ -14,9 +14,9 @@ object Form1: TForm1
   object Chart: TChart
     Cursor = crCross
     Left = 0
-    Height = 460
+    Height = 481
     Top = 0
-    Width = 590
+    Width = 714
     AllowZoom = False
     AxisList = <    
       item
@@ -42,9 +42,8 @@ object Form1: TForm1
     BackColor = clBlack
     Foot.Brush.Color = clBtnFace
     Foot.Font.Color = clBlue
-    Legend.Alignment = laBottomCenter
     Legend.BackgroundBrush.Color = clBlack
-    Legend.ColumnCount = 3
+    Legend.ColumnCount = 2
     Legend.Font.Color = clWhite
     Legend.Visible = True
     Title.Brush.Color = clBtnFace
@@ -61,12 +60,14 @@ object Form1: TForm1
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clRed
+      LinePen.Width = 2
     end
     object RBCSeries: TLineSeries
       Title = 'RBC'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clLime
+      LinePen.Width = 2
     end
     object HGBSeries: TLineSeries
       Title = 'HGB'
