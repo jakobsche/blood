@@ -3,11 +3,11 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="6">
+    <Units Count="8">
       <Unit0>
         <Filename Value="blood.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit1.pas"/>
@@ -16,10 +16,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="158"/>
-        <CursorPos X="35" Y="170"/>
-        <UsageCount Value="28"/>
+        <TopLine Value="164"/>
+        <CursorPos X="31" Y="184"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -28,22 +27,22 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="BloDat"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="99"/>
-        <CursorPos X="15" Y="114"/>
-        <UsageCount Value="28"/>
+        <TopLine Value="646"/>
+        <CursorPos X="45" Y="667"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="fctitem.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="FctItem"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
       </Unit3>
       <Unit4>
         <Filename Value="polynomials.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Polynomials"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
       </Unit4>
       <Unit5>
         <Filename Value="about.pas"/>
@@ -54,10 +53,28 @@
         <EditorIndex Value="1"/>
         <TopLine Value="20"/>
         <CursorPos Y="32"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit5>
+      <Unit6>
+        <Filename Value="../packages/realfunc/polynomials.pas"/>
+        <UnitName Value="Polynomials"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="12"/>
+        <CursorPos X="42" Y="18"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../packages/realfunc/rfcttab.pas"/>
+        <UnitName Value="RFctTab"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="6"/>
+        <CursorPos X="25" Y="21"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
     </Units>
     <JumpHistory Count="18" HistoryIndex="17">
       <Position1>

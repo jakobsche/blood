@@ -74,30 +74,35 @@ object Form1: TForm1
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clYellow
+      LinePen.Width = 2
     end
     object HCTSeries: TLineSeries
       Title = 'HCT'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clBlue
+      LinePen.Width = 2
     end
     object MCVSeries: TLineSeries
       Title = 'MCV'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clFuchsia
+      LinePen.Width = 2
     end
     object MCHSeries: TLineSeries
       Title = 'MCH'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clAqua
+      LinePen.Width = 2
     end
     object MCHCSeries: TLineSeries
       Title = 'MCHC'
       AxisIndexX = 2
       AxisIndexY = 0
       LinePen.Color = clWhite
+      LinePen.Width = 2
     end
     object PLTSeries: TLineSeries
       Title = 'PLT'
@@ -105,6 +110,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clRed
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object LYMpctSeries: TLineSeries
       Title = 'LYM%'
@@ -112,6 +118,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clLime
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object MXDpctSeries: TLineSeries
       Title = 'MXD%'
@@ -119,6 +126,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clYellow
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object NEUTpctSeries: TLineSeries
       Title = 'NEUT%'
@@ -126,6 +134,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clBlue
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object LYMSeries: TLineSeries
       Title = 'LYM#'
@@ -133,6 +142,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clFuchsia
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object MXDSeries: TLineSeries
       Title = 'MXD#'
@@ -140,6 +150,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clAqua
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object NEUTSeries: TLineSeries
       Title = 'NEUT#'
@@ -147,6 +158,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clWhite
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object RDW_SDSeries: TLineSeries
       Title = 'RDW-SD'
@@ -154,6 +166,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clRed
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object RDW_CVSeries: TLineSeries
       Title = 'RDW-CV'
@@ -161,6 +174,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clLime
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object PDWSeries: TLineSeries
       Title = 'PDW'
@@ -168,6 +182,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clYellow
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object MPVSeries: TLineSeries
       Title = 'MPV'
@@ -175,6 +190,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clBlue
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object P_LCRSeries: TLineSeries
       Title = 'P-LCR'
@@ -182,6 +198,7 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clFuchsia
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object PCTSeries: TLineSeries
       Title = 'PCT'
@@ -189,115 +206,139 @@ object Form1: TForm1
       AxisIndexY = 0
       LinePen.Color = clAqua
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object GlucoseSeries: TLineSeries
       Title = 'Glucose'
       LinePen.Color = clWhite
       LinePen.Style = psDash
+      LinePen.Width = 2
       LineType = ltNone
     end
     object BilirubinGesSeries: TLineSeries
       Title = 'Bilirubin ges.'
       LinePen.Color = clRed
+      LinePen.Width = 2
     end
     object BilirubinDirSeries: TLineSeries
       Title = 'Bilirubin direkt'
       LinePen.Color = clLime
+      LinePen.Width = 2
     end
     object BilirubinIndSeries: TLineSeries
       Title = 'Bilirubin indirekt'
       LinePen.Color = clYellow
+      LinePen.Width = 2
     end
     object GOTSeries: TLineSeries
       Title = 'GOT'
       LinePen.Color = clBlue
+      LinePen.Width = 2
     end
     object GPTSeries: TLineSeries
       Title = 'GPT'
       LinePen.Color = clFuchsia
+      LinePen.Width = 2
     end
     object Y_GTSeries: TLineSeries
       Title = 'Y-GT'
       LinePen.Color = clAqua
+      LinePen.Width = 2
     end
     object GLDHSeries: TLineSeries
       Title = 'GLDH'
       LinePen.Color = clWhite
+      LinePen.Width = 2
     end
     object APSeries: TLineSeries
       Title = 'AP'
       LinePen.Color = clRed
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object NaSeries: TLineSeries
       Title = 'Natrium'
       LinePen.Color = clLime
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object KSeries: TLineSeries
       Title = 'Kalium'
       LinePen.Color = clYellow
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object HarnsaeureSeries: TLineSeries
       Title = 'Harnsäure'
       LinePen.Color = clBlue
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object KreatininSeries: TLineSeries
       Title = 'Kreatinin'
       LinePen.Color = clFuchsia
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object MDRDSeries: TLineSeries
       Title = 'MDRDFiltration'
       LinePen.Color = clAqua
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object GFRSeries: TLineSeries
       Title = 'GFR (CKD-EPI)'
       LinePen.Color = clWhite
       LinePen.Style = psDot
+      LinePen.Width = 2
     end
     object LDHSeries: TLineSeries
       Title = 'LDH'
       LinePen.Color = clRed
       LinePen.Cosmetic = False
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object GEwSeries: TLineSeries
       Title = 'Gesamteiweiß'
       LinePen.Color = clLime
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object AlbuminSeries: TLineSeries
       Title = 'Albumin'
       LinePen.Color = clYellow
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object CRPSeries: TLineSeries
       Title = 'CRP'
       LinePen.Color = clBlue
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object CEASeries: TLineSeries
       Title = 'CEA'
       LinePen.Color = clFuchsia
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object CA19_9Series: TLineSeries
       Title = 'CA 19-9'
       LinePen.Color = clAqua
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object CaSeries: TLineSeries
       Title = 'Calcium'
       LinePen.Color = clWhite
       LinePen.Style = psDash
+      LinePen.Width = 2
     end
     object CaKorrSeries: TLineSeries
       Title = 'Ca (korrigiert)'
       LinePen.Color = clRed
+      LinePen.Width = 2
     end
   end
   object MainMenu1: TMainMenu
