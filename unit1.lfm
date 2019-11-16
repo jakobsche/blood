@@ -9,7 +9,7 @@ object Form1: TForm1
   Menu = MainMenu1
   OnCreate = FormCreate
   Position = poDefault
-  LCLVersion = '2.0.4.0'
+  LCLVersion = '2.0.2.0'
   WindowState = wsMaximized
   object Chart: TChart
     Cursor = crCross
@@ -56,6 +56,7 @@ object Form1: TForm1
     Align = alClient
     ParentShowHint = False
     object WBCSeries: TLineSeries
+      Active = False
       Title = 'WBC'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -63,6 +64,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object RBCSeries: TLineSeries
+      Active = False
       Title = 'RBC'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -70,6 +72,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object HGBSeries: TLineSeries
+      Active = False
       Title = 'HGB'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -77,6 +80,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object HCTSeries: TLineSeries
+      Active = False
       Title = 'HCT'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -84,6 +88,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object MCVSeries: TLineSeries
+      Active = False
       Title = 'MCV'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -91,6 +96,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object MCHSeries: TLineSeries
+      Active = False
       Title = 'MCH'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -98,6 +104,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object MCHCSeries: TLineSeries
+      Active = False
       Title = 'MCHC'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -105,6 +112,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object PLTSeries: TLineSeries
+      Active = False
       Title = 'PLT'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -113,6 +121,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object LYMpctSeries: TLineSeries
+      Active = False
       Title = 'LYM%'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -121,6 +130,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object MXDpctSeries: TLineSeries
+      Active = False
       Title = 'MXD%'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -129,6 +139,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object NEUTpctSeries: TLineSeries
+      Active = False
       Title = 'NEUT%'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -137,6 +148,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object LYMSeries: TLineSeries
+      Active = False
       Title = 'LYM#'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -145,6 +157,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object MXDSeries: TLineSeries
+      Active = False
       Title = 'MXD#'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -153,6 +166,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object NEUTSeries: TLineSeries
+      Active = False
       Title = 'NEUT#'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -161,6 +175,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object RDW_SDSeries: TLineSeries
+      Active = False
       Title = 'RDW-SD'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -169,6 +184,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object RDW_CVSeries: TLineSeries
+      Active = False
       Title = 'RDW-CV'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -177,6 +193,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object PDWSeries: TLineSeries
+      Active = False
       Title = 'PDW'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -185,6 +202,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object MPVSeries: TLineSeries
+      Active = False
       Title = 'MPV'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -193,6 +211,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object P_LCRSeries: TLineSeries
+      Active = False
       Title = 'P-LCR'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -201,6 +220,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object PCTSeries: TLineSeries
+      Active = False
       Title = 'PCT'
       AxisIndexX = 2
       AxisIndexY = 0
@@ -209,6 +229,7 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object GlucoseSeries: TLineSeries
+      Active = False
       Title = 'Glucose'
       LinePen.Color = clWhite
       LinePen.Style = psDash
@@ -216,83 +237,98 @@ object Form1: TForm1
       LineType = ltNone
     end
     object BilirubinGesSeries: TLineSeries
+      Active = False
       Title = 'Bilirubin ges.'
       LinePen.Color = clRed
       LinePen.Width = 2
     end
     object BilirubinDirSeries: TLineSeries
+      Active = False
       Title = 'Bilirubin direkt'
       LinePen.Color = clLime
       LinePen.Width = 2
     end
     object BilirubinIndSeries: TLineSeries
+      Active = False
       Title = 'Bilirubin indirekt'
       LinePen.Color = clYellow
       LinePen.Width = 2
     end
     object GOTSeries: TLineSeries
+      Active = False
       Title = 'GOT'
       LinePen.Color = clBlue
       LinePen.Width = 2
     end
     object GPTSeries: TLineSeries
+      Active = False
       Title = 'GPT'
       LinePen.Color = clFuchsia
       LinePen.Width = 2
     end
     object Y_GTSeries: TLineSeries
+      Active = False
       Title = 'Y-GT'
       LinePen.Color = clAqua
       LinePen.Width = 2
     end
     object GLDHSeries: TLineSeries
+      Active = False
       Title = 'GLDH'
       LinePen.Color = clWhite
       LinePen.Width = 2
     end
     object APSeries: TLineSeries
+      Active = False
       Title = 'AP'
       LinePen.Color = clRed
       LinePen.Style = psDot
       LinePen.Width = 2
     end
     object NaSeries: TLineSeries
+      Active = False
       Title = 'Natrium'
       LinePen.Color = clLime
       LinePen.Style = psDot
       LinePen.Width = 2
     end
     object KSeries: TLineSeries
+      Active = False
       Title = 'Kalium'
       LinePen.Color = clYellow
       LinePen.Style = psDot
       LinePen.Width = 2
     end
     object HarnsaeureSeries: TLineSeries
+      Active = False
       Title = 'Harnsäure'
       LinePen.Color = clBlue
       LinePen.Style = psDot
       LinePen.Width = 2
     end
     object KreatininSeries: TLineSeries
+      Active = False
       Title = 'Kreatinin'
       LinePen.Color = clFuchsia
       LinePen.Style = psDot
       LinePen.Width = 2
     end
     object MDRDSeries: TLineSeries
+      Active = False
       Title = 'MDRDFiltration'
       LinePen.Color = clAqua
       LinePen.Style = psDot
       LinePen.Width = 2
     end
     object GFRSeries: TLineSeries
+      Active = False
       Title = 'GFR (CKD-EPI)'
       LinePen.Color = clWhite
       LinePen.Style = psDot
       LinePen.Width = 2
     end
     object LDHSeries: TLineSeries
+      Active = False
       Title = 'LDH'
       LinePen.Color = clRed
       LinePen.Cosmetic = False
@@ -300,42 +336,49 @@ object Form1: TForm1
       LinePen.Width = 2
     end
     object GEwSeries: TLineSeries
+      Active = False
       Title = 'Gesamteiweiß'
       LinePen.Color = clLime
       LinePen.Style = psDash
       LinePen.Width = 2
     end
     object AlbuminSeries: TLineSeries
+      Active = False
       Title = 'Albumin'
       LinePen.Color = clYellow
       LinePen.Style = psDash
       LinePen.Width = 2
     end
     object CRPSeries: TLineSeries
+      Active = False
       Title = 'CRP'
       LinePen.Color = clBlue
       LinePen.Style = psDash
       LinePen.Width = 2
     end
     object CEASeries: TLineSeries
+      Active = False
       Title = 'CEA'
       LinePen.Color = clFuchsia
       LinePen.Style = psDash
       LinePen.Width = 2
     end
     object CA19_9Series: TLineSeries
+      Active = False
       Title = 'CA 19-9'
       LinePen.Color = clAqua
       LinePen.Style = psDash
       LinePen.Width = 2
     end
     object CaSeries: TLineSeries
+      Active = False
       Title = 'Calcium'
       LinePen.Color = clWhite
       LinePen.Style = psDash
       LinePen.Width = 2
     end
     object CaKorrSeries: TLineSeries
+      Active = False
       Title = 'Ca (korrigiert)'
       LinePen.Color = clRed
       LinePen.Width = 2

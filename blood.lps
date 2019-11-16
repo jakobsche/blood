@@ -7,7 +7,10 @@
       <Unit0>
         <Filename Value="blood.lpr"/>
         <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="77" Y="10"/>
         <UsageCount Value="29"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit1.pas"/>
@@ -16,6 +19,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="164"/>
         <CursorPos X="31" Y="184"/>
         <UsageCount Value="29"/>
@@ -76,7 +80,7 @@
         <Loaded Value="True"/>
       </Unit7>
     </Units>
-    <JumpHistory Count="18" HistoryIndex="17">
+    <JumpHistory Count="19" HistoryIndex="18">
       <Position1>
         <Filename Value="unit1.pas"/>
       </Position1>
@@ -147,6 +151,10 @@
         <Filename Value="unit1.pas"/>
         <Caret Line="100" Column="32" TopLine="88"/>
       </Position18>
+      <Position19>
+        <Filename Value="../packages/realfunc/rfcttab.pas"/>
+        <Caret Line="21" Column="25" TopLine="6"/>
+      </Position19>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
