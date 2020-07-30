@@ -1,6 +1,6 @@
 # blood
 
-application that demonstrates the usage of a TChart component for multiple functions given as table at runtime. 
+application that demonstrates the usage of a TChart component for multiple functions given as table at design time. 
 
 It includes 
 - the formatting of an axis for the type TDateTime, 
